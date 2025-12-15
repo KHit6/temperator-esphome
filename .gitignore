@@ -1,0 +1,7 @@
+# Gitignore settings for ESPHome
+documentation/*
+/.esphome/
+/secrets.yaml
+*.backup
+Pipfile.lock
+

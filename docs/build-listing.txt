@@ -1,0 +1,1631 @@
+KHit6@foo:~/temperator$ pipenv shell
+Launching subshell in virtual environment...
+ . /home/khit6/.local/share/virtualenvs/temperator-mCwTvckn/bin/activate
+KHit6@foo:~/temperator$  . /home/khit6/.local/share/virtualenvs/temperator-mCwTvckn/bin/activate
+
+(temperator) KHit6@foo:~/temperator$ esphome compile src/temperator.yaml
+INFO ESPHome 2025.11.5
+INFO Reading configuration src/temperator.yaml...
+WARNING GPIO46 is a strapping PIN and should only be used for I/O with care.
+Attaching external pullup/down resistors to strapping pins can cause unexpected failures.
+See https://esphome.io/guides/faq.html#why-am-i-getting-a-warning-about-strapping-pins
+WARNING GPIO0 is a strapping PIN and should only be used for I/O with care.
+Attaching external pullup/down resistors to strapping pins can cause unexpected failures.
+See https://esphome.io/guides/faq.html#why-am-i-getting-a-warning-about-strapping-pins
+WARNING GPIO45 is a strapping PIN and should only be used for I/O with care.
+Attaching external pullup/down resistors to strapping pins can cause unexpected failures.
+See https://esphome.io/guides/faq.html#why-am-i-getting-a-warning-about-strapping-pins
+WARNING GPIO3 is a strapping PIN and should only be used for I/O with care.
+Attaching external pullup/down resistors to strapping pins can cause unexpected failures.
+See https://esphome.io/guides/faq.html#why-am-i-getting-a-warning-about-strapping-pins
+INFO Generating C++ source...
+INFO Setting CONFIG_LWIP_MAX_SOCKETS to 11 (registered: api=4, captive_portal=4, mdns=2, ota=1)
+INFO Compiling app... Build path: /home/khit6/Workspace/homeautomation/esphome-projects/temperator/src/.esphome/build/temperator
+*************************************************************************************************************************************************************************************************************************************************************
+If you like PlatformIO, please:
+- star it on GitHub > https://github.com/platformio/platformio-core
+- follow us on LinkedIn to stay up-to-date on the latest project news > https://www.linkedin.com/company/platformio/
+- try PlatformIO IDE for embedded development > https://platformio.org/platformio-ide
+*************************************************************************************************************************************************************************************************************************************************************
+
+Processing temperator (board: arduino_nano_esp32; framework: espidf; platform: https://github.com/pioarduino/platform-espressif32/releases/download/55.03.31-2/platform-espressif32.zip)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Platform Manager: Installing https://github.com/pioarduino/platform-espressif32/releases/download/55.03.31-2/platform-espressif32.zip
+INFO Installing https://github.com/pioarduino/platform-espressif32/releases/download/55.03.31-2/platform-espressif32.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Platform Manager: espressif32@55.3.31 has been installed!
+INFO espressif32@55.3.31 has been installed!
+INFO tool-esp_install not installed, installing version https://github.com/pioarduino/esp_install/releases/download/v5.3.4/esp_install-v5.3.4.zip
+INFO Installing tool-esp_install version https://github.com/pioarduino/esp_install/releases/download/v5.3.4/esp_install-v5.3.4.zip
+Tool Manager: Installing https://github.com/pioarduino/esp_install/releases/download/v5.3.4/esp_install-v5.3.4.zip
+INFO Installing https://github.com/pioarduino/esp_install/releases/download/v5.3.4/esp_install-v5.3.4.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-esp_install@5.3.4 has been installed!
+INFO tool-esp_install@5.3.4 has been installed!
+INFO tool-esp_install successfully installed and verified
+Created pioarduino Python virtual environment: /home/khit6/.platformio/penv
+INFO Package configuration completed successfully
+Tool Manager: Installing https://github.com/pioarduino/esp-idf/releases/download/v5.5.1/esp-idf-v5.5.1.tar.xz
+INFO Installing https://github.com/pioarduino/esp-idf/releases/download/v5.5.1/esp-idf-v5.5.1.tar.xz
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: framework-espidf@3.50501.0 has been installed!
+INFO framework-espidf@3.50501.0 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/xtensa-esp-elf-14.2.0_20241119.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/xtensa-esp-elf-14.2.0_20241119.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: toolchain-xtensa-esp-elf@14.2.0+20241119 has been installed!
+INFO toolchain-xtensa-esp-elf@14.2.0+20241119 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/esptoolpy-v5.1.0.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/esptoolpy-v5.1.0.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-esptoolpy@5.1.0 has been installed!
+INFO tool-esptoolpy@5.1.0 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/contrib-piohome-3.4.4.tar.gz
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/contrib-piohome-3.4.4.tar.gz
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: contrib-piohome@3.4.4 has been installed!
+INFO contrib-piohome@3.4.4 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/dfuutil-arduino-v1.11.0.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/dfuutil-arduino-v1.11.0.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-dfuutil-arduino@1.11.0 has been installed!
+INFO tool-dfuutil-arduino@1.11.0 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/mklittlefs-3.2.0-new.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/mklittlefs-3.2.0-new.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-mklittlefs@3.2.0 has been installed!
+INFO tool-mklittlefs@3.2.0 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/cmake-4.0.3.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/cmake-4.0.3.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-cmake@4.0.3 has been installed!
+INFO tool-cmake@4.0.3 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/esp-rom-elfs-20241011.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/esp-rom-elfs-20241011.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-esp-rom-elfs@2024.10.11 has been installed!
+INFO tool-esp-rom-elfs@2024.10.11 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/ninja-1.13.1.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/ninja-1.13.1.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-ninja@1.13.1 has been installed!
+INFO tool-ninja@1.13.1 has been installed!
+Tool Manager: Installing https://github.com/pioarduino/registry/releases/download/0.0.1/scons-4.8.1.zip
+INFO Installing https://github.com/pioarduino/registry/releases/download/0.0.1/scons-4.8.1.zip
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-scons@4.40801.0 has been installed!
+INFO tool-scons@4.40801.0 has been installed!
+Tool Manager: Installing platformio/tool-scons @ ~4.40801.0
+INFO Installing platformio/tool-scons @ ~4.40801.0
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Tool Manager: tool-scons@4.40801.0 has been installed!
+INFO tool-scons@4.40801.0 has been installed!
+INFO Installing tools via idf_tools.py (this may take several minutes)...
+Tool Manager: Installing file:///home/khit6/.platformio/tools/tool-esptoolpy
+INFO Installing file:///home/khit6/.platformio/tools/tool-esptoolpy
+Tool Manager: tool-esptoolpy@5.1.0 has been installed!
+INFO tool-esptoolpy@5.1.0 has been installed!
+INFO Tool tool-esptoolpy successfully installed
+INFO Installing tools via idf_tools.py (this may take several minutes)...
+Tool Manager: Installing file:///home/khit6/.platformio/tools/toolchain-xtensa-esp-elf
+INFO Installing file:///home/khit6/.platformio/tools/toolchain-xtensa-esp-elf
+Tool Manager: toolchain-xtensa-esp-elf@14.2.0+20241119 has been installed!
+INFO toolchain-xtensa-esp-elf@14.2.0+20241119 has been installed!
+INFO Tool toolchain-xtensa-esp-elf successfully installed
+INFO Installing tools via idf_tools.py (this may take several minutes)...
+Tool Manager: Installing file:///home/khit6/.platformio/tools/tool-mklittlefs
+INFO Installing file:///home/khit6/.platformio/tools/tool-mklittlefs
+Tool Manager: tool-mklittlefs@3.2.0 has been installed!
+INFO tool-mklittlefs@3.2.0 has been installed!
+INFO Tool tool-mklittlefs successfully installed
+INFO Installing tools via idf_tools.py (this may take several minutes)...
+Tool Manager: Installing file:///home/khit6/.platformio/tools/tool-cmake
+INFO Installing file:///home/khit6/.platformio/tools/tool-cmake
+Tool Manager: tool-cmake@4.0.3 has been installed!
+INFO tool-cmake@4.0.3 has been installed!
+INFO Tool tool-cmake successfully installed
+INFO Installing tools via idf_tools.py (this may take several minutes)...
+Tool Manager: Installing file:///home/khit6/.platformio/tools/tool-ninja
+INFO Installing file:///home/khit6/.platformio/tools/tool-ninja
+Tool Manager: tool-ninja@1.13.1 has been installed!
+INFO tool-ninja@1.13.1 has been installed!
+INFO Tool tool-ninja successfully installed
+INFO Installing tools via idf_tools.py (this may take several minutes)...
+Tool Manager: Installing file:///home/khit6/.platformio/tools/tool-esp-rom-elfs
+INFO Installing file:///home/khit6/.platformio/tools/tool-esp-rom-elfs
+Tool Manager: tool-esp-rom-elfs@2024.10.11 has been installed!
+INFO tool-esp-rom-elfs@2024.10.11 has been installed!
+INFO Tool tool-esp-rom-elfs successfully installed
+INFO Installing tools via idf_tools.py (this may take several minutes)...
+Tool Manager: Installing file:///home/khit6/.platformio/tools/tool-dfuutil-arduino
+INFO Installing file:///home/khit6/.platformio/tools/tool-dfuutil-arduino
+Tool Manager: tool-dfuutil-arduino@1.11.0 has been installed!
+INFO tool-dfuutil-arduino@1.11.0 has been installed!
+INFO Tool tool-dfuutil-arduino successfully installed
+INFO Package configuration completed successfully
+Installed esptool from tl-install path: /home/khit6/.platformio/packages/tool-esptoolpy
+HARDWARE: ESP32S3 240MHz, 320KB RAM, 16MB Flash
+ - contrib-piohome @ 3.4.4
+ - framework-espidf @ 3.50501.0 (5.5.1)
+ - tool-cmake @ 4.0.3
+ - tool-dfuutil-arduino @ 1.11.0
+ - tool-esp-rom-elfs @ 2024.10.11
+ - tool-esptoolpy @ 5.1.0
+ - tool-mklittlefs @ 3.2.0
+ - tool-ninja @ 1.13.1
+ - tool-scons @ 4.40801.0 (4.8.1)
+ - toolchain-xtensa-esp-elf @ 14.2.0+20241119
+Creating a new virtual environment for IDF Python dependencies using uv
+Using Python 3.12.3 environment at: /home/khit6/.platformio/penv/.espidf-5.5.1
+Installing ESP-IDF's Python dependencies with uv
+Using Python 3.12.3 environment at: /home/khit6/.platformio/penv/.espidf-5.5.1
+Resolved 27 packages in 211ms
+Installed 27 packages in 11ms
+ + annotated-types==0.7.0
+ + certifi==2025.11.12
+ + cffi==2.0.0
+ + charset-normalizer==3.4.4
+ + click==8.3.1
+ + colorama==0.4.6
+ + cryptography==44.0.3
+ + esp-idf-kconfig==2.5.0
+ + idf-component-manager==2.4.3
+ + idna==3.11
+ + jsonref==1.1.0
+ + pycparser==2.23
+ + pydantic==2.11.10
+ + pydantic-core==2.33.2
+ + pydantic-settings==2.12.0
+ + pyparsing==3.2.5
+ + python-dotenv==1.2.1
+ + requests==2.32.5
+ + requests-file==3.0.1
+ + requests-toolbelt==1.0.0
+ + ruamel-yaml==0.18.16
+ + ruamel-yaml-clib==0.2.15
+ + tqdm==4.67.1
+ + truststore==0.10.4
+ + typing-extensions==4.15.0
+ + typing-inspection==0.4.2
+ + urllib3==1.26.20
+Reading CMake configuration...
+Generating assembly for certificate bundle...
+No dependencies
+Compiling .pioenvs/temperator/src/esphome/components/adc/adc_sensor_common.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/adc/adc_sensor_esp32.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/api_connection.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/api_frame_helper.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/api_frame_helper_plaintext.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/api_pb2.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/api_pb2_service.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/api_server.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/list_entities.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/proto.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/api/subscribe_state.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/binary_sensor/automation.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/binary_sensor/binary_sensor.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/binary_sensor/filter.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/captive_portal/captive_portal.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/captive_portal/dns_server_esp32_idf.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/ct_clamp/ct_clamp_sensor.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/dallas_temp/dallas_temp.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/display/display.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/display/display_buffer.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/display/rect.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/esp32/core.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/esp32/gpio.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/esp32/helpers.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/esp32/preferences.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/esphome/ota/ota_esphome.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/font/font.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/gpio/binary_sensor/gpio_binary_sensor.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/gpio/one_wire/gpio_one_wire.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/gpio/output/gpio_binary_output.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/i2c/i2c.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/i2c/i2c_bus_esp_idf.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/logger/logger.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/logger/logger_esp32.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/logger/task_log_buffer.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/md5/md5.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/mdns/mdns_component.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/mdns/mdns_esp32.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/network/util.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/number/automation.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/number/number.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/number/number_call.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/number/number_traits.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/one_wire/one_wire.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/one_wire/one_wire_bus.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/ota/ota_backend.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/ota/ota_backend_esp_idf.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/output/automation.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/output/float_output.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/safe_mode/safe_mode.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/sensor/automation.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/sensor/filter.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/sensor/sensor.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/sha256/sha256.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/socket/bsd_sockets_impl.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/socket/socket.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/ssd1306_base/ssd1306_base.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/ssd1306_i2c/ssd1306_i2c.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/status_led/status_led.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/template/number/template_number.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/web_server/ota/ota_web_server.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/web_server_base/web_server_base.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/web_server_idf/multipart.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/web_server_idf/utils.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/web_server_idf/web_server_idf.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/wifi/wifi_component.cpp.o
+Compiling .pioenvs/temperator/src/esphome/components/wifi/wifi_component_esp_idf.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/application.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/color.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/component.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/component_iterator.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/controller_registry.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/entity_base.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/helpers.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/log.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/ring_buffer.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/scheduler.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/time.cpp.o
+Compiling .pioenvs/temperator/src/esphome/core/util.cpp.o
+Compiling .pioenvs/temperator/src/main.cpp.o
+Generating LD script .pioenvs/temperator/esp-idf/esp_system/ld/memory.ld.in
+Generating LD script .pioenvs/temperator/memory.ld
+Generating LD script .pioenvs/temperator/esp-idf/esp_system/ld/sections.ld.in
+Compiling .pioenvs/temperator/app_trace/app_trace.c.o
+Compiling .pioenvs/temperator/app_trace/app_trace_util.c.o
+Compiling .pioenvs/temperator/app_trace/host_file_io.c.o
+Compiling .pioenvs/temperator/app_trace/port/port_uart.c.o
+Compiling .pioenvs/temperator/app_update/esp_ota_ops.c.o
+Compiling .pioenvs/temperator/app_update/esp_ota_app_desc.c.o
+Archiving .pioenvs/temperator/esp-idf/app_trace/libapp_trace.a
+Indexing .pioenvs/temperator/esp-idf/app_trace/libapp_trace.a
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_common.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_common_loader.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_clock_init.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_mem.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_random.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_efuse.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/flash_encrypt.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/secure_boot.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_random_esp32s3.c.o
+Compiling .pioenvs/temperator/bootloader_support/bootloader_flash/src/bootloader_flash.c.o
+Compiling .pioenvs/temperator/bootloader_support/bootloader_flash/src/flash_qio_mode.c.o
+Compiling .pioenvs/temperator/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.o
+Archiving .pioenvs/temperator/esp-idf/app_update/libapp_update.a
+Indexing .pioenvs/temperator/esp-idf/app_update/libapp_update.a
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_utility.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/flash_partitions.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/esp_image_format.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/bootloader_sha.c.o
+Compiling .pioenvs/temperator/bootloader_support/src/esp32s3/secure_boot_secure_features.c.o
+Compiling .pioenvs/temperator/cmock/CMock/src/cmock.c.o
+Compiling .pioenvs/temperator/console/commands.c.o
+Compiling .pioenvs/temperator/console/esp_console_common.c.o
+Compiling .pioenvs/temperator/console/esp_console_repl_internal.c.o
+Archiving .pioenvs/temperator/esp-idf/cmock/libcmock.a
+Indexing .pioenvs/temperator/esp-idf/cmock/libcmock.a
+Compiling .pioenvs/temperator/console/split_argv.c.o
+Compiling .pioenvs/temperator/console/linenoise/linenoise.c.o
+Archiving .pioenvs/temperator/esp-idf/bootloader_support/libbootloader_support.a
+Indexing .pioenvs/temperator/esp-idf/bootloader_support/libbootloader_support.a
+Compiling .pioenvs/temperator/console/esp_console_repl_chip.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_cmd.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_date.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_dbl.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_dstr.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_end.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_file.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_hashtable.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_int.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_lit.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_rem.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_rex.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_str.c.o
+Compiling .pioenvs/temperator/console/argtable3/arg_utils.c.o
+Compiling .pioenvs/temperator/console/argtable3/argtable3.c.o
+Compiling .pioenvs/temperator/cxx/cxx_exception_stubs.cpp.o
+Compiling .pioenvs/temperator/cxx/cxx_guards.cpp.o
+Compiling .pioenvs/temperator/cxx/cxx_init.cpp.o
+Compiling .pioenvs/temperator/driver/deprecated/adc_legacy.c.o
+Compiling .pioenvs/temperator/driver/deprecated/adc_dma_legacy.c.o
+Compiling .pioenvs/temperator/driver/deprecated/timer_legacy.c.o
+Compiling .pioenvs/temperator/driver/i2c/i2c.c.o
+Compiling .pioenvs/temperator/driver/deprecated/i2s_legacy.c.o
+Archiving .pioenvs/temperator/esp-idf/console/libconsole.a
+Indexing .pioenvs/temperator/esp-idf/console/libconsole.a
+Compiling .pioenvs/temperator/driver/deprecated/mcpwm_legacy.c.o
+Compiling .pioenvs/temperator/driver/deprecated/pcnt_legacy.c.o
+Archiving .pioenvs/temperator/esp-idf/cxx/libcxx.a
+Indexing .pioenvs/temperator/esp-idf/cxx/libcxx.a
+Compiling .pioenvs/temperator/driver/deprecated/rmt_legacy.c.o
+Compiling .pioenvs/temperator/driver/deprecated/sigma_delta_legacy.c.o
+Compiling .pioenvs/temperator/driver/deprecated/rtc_temperature_legacy.c.o
+Compiling .pioenvs/temperator/driver/touch_sensor/touch_sensor_common.c.o
+Compiling .pioenvs/temperator/driver/touch_sensor/esp32s3/touch_sensor.c.o
+Compiling .pioenvs/temperator/driver/twai/twai.c.o
+Compiling .pioenvs/temperator/efuse/esp32s3/esp_efuse_table.c.o
+Compiling .pioenvs/temperator/efuse/esp32s3/esp_efuse_fields.c.o
+Compiling .pioenvs/temperator/efuse/esp32s3/esp_efuse_rtc_calib.c.o
+Compiling .pioenvs/temperator/efuse/esp32s3/esp_efuse_utility.c.o
+Compiling .pioenvs/temperator/efuse/src/esp_efuse_api.c.o
+Compiling .pioenvs/temperator/efuse/src/esp_efuse_fields.c.o
+Compiling .pioenvs/temperator/efuse/src/esp_efuse_utility.c.o
+Compiling .pioenvs/temperator/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.o
+Compiling .pioenvs/temperator/efuse/src/esp_efuse_startup.c.o
+Compiling .pioenvs/temperator/esp-tls/esp_tls.c.o
+Compiling .pioenvs/temperator/esp-tls/esp-tls-crypto/esp_tls_crypto.c.o
+Compiling .pioenvs/temperator/esp-tls/esp_tls_error_capture.c.o
+Compiling .pioenvs/temperator/esp-tls/esp_tls_platform_port.c.o
+Compiling .pioenvs/temperator/esp-tls/esp_tls_mbedtls.c.o
+Compiling .pioenvs/temperator/esp_adc/adc_oneshot.c.o
+Archiving .pioenvs/temperator/esp-idf/efuse/libefuse.a
+Archiving .pioenvs/temperator/esp-idf/driver/libdriver.a
+Indexing .pioenvs/temperator/esp-idf/efuse/libefuse.a
+Compiling .pioenvs/temperator/esp_adc/adc_common.c.o
+Indexing .pioenvs/temperator/esp-idf/driver/libdriver.a
+Compiling .pioenvs/temperator/esp_adc/adc_cali.c.o
+Compiling .pioenvs/temperator/esp_adc/adc_cali_curve_fitting.c.o
+Compiling .pioenvs/temperator/esp_adc/deprecated/esp_adc_cal_common_legacy.c.o
+Compiling .pioenvs/temperator/esp_adc/adc_continuous.c.o
+Compiling .pioenvs/temperator/esp_adc/adc_monitor.c.o
+Compiling .pioenvs/temperator/esp_adc/gdma/adc_dma.c.o
+Compiling .pioenvs/temperator/esp_adc/adc_filter.c.o
+Compiling .pioenvs/temperator/esp_adc/esp32s3/curve_fitting_coefficients.c.o
+Compiling .pioenvs/temperator/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c.o
+Compiling .pioenvs/temperator/esp_app_format/esp_app_desc.c.o
+Compiling .pioenvs/temperator/esp_bootloader_format/esp_bootloader_desc.c.o
+Archiving .pioenvs/temperator/esp-idf/esp-tls/libesp-tls.a
+Indexing .pioenvs/temperator/esp-idf/esp-tls/libesp-tls.a
+Compiling .pioenvs/temperator/esp_coex/esp32s3/esp_coex_adapter.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+Indexing .pioenvs/temperator/esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+Compiling .pioenvs/temperator/esp_coex/src/coexist_debug_diagram.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_app_format/libesp_app_format.a
+Indexing .pioenvs/temperator/esp-idf/esp_app_format/libesp_app_format.a
+Compiling .pioenvs/temperator/esp_coex/src/coexist_debug.c.o
+Compiling .pioenvs/temperator/esp_common/src/esp_err_to_name.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_coex/libesp_coex.a
+Archiving .pioenvs/temperator/esp-idf/esp_adc/libesp_adc.a
+Indexing .pioenvs/temperator/esp-idf/esp_coex/libesp_coex.a
+Compiling .pioenvs/temperator/esp_driver_cam/esp_cam_ctlr.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_adc/libesp_adc.a
+Compiling .pioenvs/temperator/esp_driver_cam/dvp_share_ctrl.c.o
+Compiling .pioenvs/temperator/esp_driver_cam/dvp/src/esp_cam_ctlr_dvp_gdma.c.o
+Compiling .pioenvs/temperator/esp_driver_cam/dvp/src/esp_cam_ctlr_dvp_cam.c.o
+Compiling .pioenvs/temperator/esp_driver_gpio/src/gpio.c.o
+Compiling .pioenvs/temperator/esp_driver_gpio/src/gpio_glitch_filter_ops.c.o
+Compiling .pioenvs/temperator/esp_driver_gpio/src/rtc_io.c.o
+Compiling .pioenvs/temperator/esp_driver_gpio/src/dedic_gpio.c.o
+Compiling .pioenvs/temperator/esp_driver_gpio/src/gpio_pin_glitch_filter.c.o
+Compiling .pioenvs/temperator/esp_driver_gptimer/src/gptimer.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_common/libesp_common.a
+Indexing .pioenvs/temperator/esp-idf/esp_common/libesp_common.a
+Compiling .pioenvs/temperator/esp_driver_gptimer/src/gptimer_common.c.o
+Compiling .pioenvs/temperator/esp_driver_i2c/i2c_master.c.o
+Compiling .pioenvs/temperator/esp_driver_i2c/i2c_common.c.o
+Compiling .pioenvs/temperator/esp_driver_i2c/i2c_slave.c.o
+Compiling .pioenvs/temperator/esp_driver_i2s/i2s_common.c.o
+Compiling .pioenvs/temperator/esp_driver_i2s/i2s_std.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_cam/libesp_driver_cam.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_cam/libesp_driver_cam.a
+Compiling .pioenvs/temperator/esp_driver_i2s/i2s_pdm.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a
+Compiling .pioenvs/temperator/esp_driver_i2s/i2s_tdm.c.o
+Compiling .pioenvs/temperator/esp_driver_i2s/i2s_platform.c.o
+Compiling .pioenvs/temperator/esp_driver_ledc/src/ledc.c.o
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_cap.c.o
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_cmpr.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_gpio/libesp_driver_gpio.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_gpio/libesp_driver_gpio.a
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_com.c.o
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_fault.c.o
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_gen.c.o
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_oper.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_i2s/libesp_driver_i2s.a
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_sync.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_driver_i2s/libesp_driver_i2s.a
+Compiling .pioenvs/temperator/esp_driver_mcpwm/src/mcpwm_timer.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_i2c/libesp_driver_i2c.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_i2c/libesp_driver_i2c.a
+Compiling .pioenvs/temperator/esp_driver_pcnt/src/pulse_cnt.c.o
+Compiling .pioenvs/temperator/esp_driver_rmt/src/rmt_common.c.o
+Compiling .pioenvs/temperator/esp_driver_rmt/src/rmt_encoder.c.o
+Compiling .pioenvs/temperator/esp_driver_rmt/src/rmt_encoder_bytes.c.o
+Compiling .pioenvs/temperator/esp_driver_rmt/src/rmt_encoder_copy.c.o
+Compiling .pioenvs/temperator/esp_driver_rmt/src/rmt_encoder_simple.c.o
+Compiling .pioenvs/temperator/esp_driver_rmt/src/rmt_rx.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
+Compiling .pioenvs/temperator/esp_driver_rmt/src/rmt_tx.c.o
+Compiling .pioenvs/temperator/esp_driver_sdm/src/sdm.c.o
+Compiling .pioenvs/temperator/esp_driver_sdmmc/src/sdmmc_transaction.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_ledc/libesp_driver_ledc.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_ledc/libesp_driver_ledc.a
+Compiling .pioenvs/temperator/esp_driver_sdmmc/src/sdmmc_host.c.o
+Compiling .pioenvs/temperator/esp_driver_sdspi/src/sdspi_crc.c.o
+Compiling .pioenvs/temperator/esp_driver_sdspi/src/sdspi_host.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+Compiling .pioenvs/temperator/esp_driver_sdspi/src/sdspi_transaction.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+Compiling .pioenvs/temperator/esp_driver_spi/src/gpspi/spi_common.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
+Compiling .pioenvs/temperator/esp_driver_spi/src/gpspi/spi_master.c.o
+Compiling .pioenvs/temperator/esp_driver_spi/src/gpspi/spi_slave.c.o
+Compiling .pioenvs/temperator/esp_driver_spi/src/gpspi/spi_slave_hd.c.o
+Compiling .pioenvs/temperator/esp_driver_touch_sens/common/touch_sens_common.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
+Compiling .pioenvs/temperator/esp_driver_touch_sens/hw_ver2/touch_version_specific.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+Compiling .pioenvs/temperator/esp_driver_tsens/src/temperature_sensor.c.o
+Compiling .pioenvs/temperator/esp_driver_twai/esp_twai.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a
+Compiling .pioenvs/temperator/esp_driver_twai/esp_twai_onchip.c.o
+Compiling .pioenvs/temperator/esp_driver_uart/src/uart.c.o
+Compiling .pioenvs/temperator/esp_driver_uart/src/uart_wakeup.c.o
+Compiling .pioenvs/temperator/esp_driver_uart/src/uhci.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
+Compiling .pioenvs/temperator/esp_driver_uart/src/uart_vfs.c.o
+Compiling .pioenvs/temperator/esp_driver_usb_serial_jtag/src/usb_serial_jtag.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_spi/libesp_driver_spi.a
+Archiving .pioenvs/temperator/esp-idf/esp_driver_touch_sens/libesp_driver_touch_sens.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_touch_sens/libesp_driver_touch_sens.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_spi/libesp_driver_spi.a
+Compiling .pioenvs/temperator/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c.o
+Compiling .pioenvs/temperator/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c.o
+Compiling .pioenvs/temperator/esp_eth/src/esp_eth.c.o
+Compiling .pioenvs/temperator/esp_eth/src/phy/esp_eth_phy_802_3.c.o
+Compiling .pioenvs/temperator/esp_eth/src/esp_eth_netif_glue.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_twai/libesp_driver_twai.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_twai/libesp_driver_twai.a
+Compiling .pioenvs/temperator/esp_event/default_event_loop.c.o
+Compiling .pioenvs/temperator/esp_event/esp_event.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a
+Compiling .pioenvs/temperator/esp_event/esp_event_private.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a
+Compiling .pioenvs/temperator/esp_gdbstub/src/gdbstub.c.o
+Compiling .pioenvs/temperator/esp_gdbstub/src/gdbstub_transport.c.o
+Compiling .pioenvs/temperator/esp_gdbstub/src/packet.c.o
+Compiling .pioenvs/temperator/esp_gdbstub/src/port/xtensa/gdbstub_xtensa.c.o
+Compiling .pioenvs/temperator/esp_gdbstub/src/port/xtensa/gdbstub-entry.S.o
+Compiling .pioenvs/temperator/esp_gdbstub/src/port/xtensa/xt_debugexception.S.o
+Compiling .pioenvs/temperator/esp_hid/src/esp_hidd.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_eth/libesp_eth.a
+Compiling .pioenvs/temperator/esp_hid/src/esp_hidh.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_eth/libesp_eth.a
+Compiling .pioenvs/temperator/esp_hid/src/esp_hid_common.c.o
+Compiling .pioenvs/temperator/esp_http_client/esp_http_client.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_event/libesp_event.a
+Archiving .pioenvs/temperator/esp-idf/esp_gdbstub/libesp_gdbstub.a
+Indexing .pioenvs/temperator/esp-idf/esp_event/libesp_event.a
+Compiling .pioenvs/temperator/esp_http_client/lib/http_auth.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_gdbstub/libesp_gdbstub.a
+Compiling .pioenvs/temperator/esp_http_client/lib/http_header.c.o
+Compiling .pioenvs/temperator/esp_http_client/lib/http_utils.c.o
+Compiling .pioenvs/temperator/esp_http_server/src/httpd_main.c.o
+Compiling .pioenvs/temperator/esp_http_server/src/httpd_parse.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_driver_uart/libesp_driver_uart.a
+Indexing .pioenvs/temperator/esp-idf/esp_driver_uart/libesp_driver_uart.a
+Compiling .pioenvs/temperator/esp_http_server/src/httpd_sess.c.o
+Compiling .pioenvs/temperator/esp_http_server/src/httpd_txrx.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_hid/libesp_hid.a
+Compiling .pioenvs/temperator/esp_http_server/src/httpd_uri.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_hid/libesp_hid.a
+Compiling .pioenvs/temperator/esp_http_server/src/httpd_ws.c.o
+Compiling .pioenvs/temperator/esp_http_server/src/util/ctrl_sock.c.o
+Compiling .pioenvs/temperator/esp_https_ota/src/esp_https_ota.c.o
+Compiling .pioenvs/temperator/esp_https_server/src/https_server.c.o
+Compiling .pioenvs/temperator/esp_hw_support/cpu.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/esp_cpu_intr.c.o
+Compiling .pioenvs/temperator/esp_hw_support/esp_memory_utils.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_http_server/libesp_http_server.a
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/cpu_region_protect.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_http_server/libesp_http_server.a
+Compiling .pioenvs/temperator/esp_hw_support/esp_clk.c.o
+Compiling .pioenvs/temperator/esp_hw_support/clk_ctrl_os.c.o
+Compiling .pioenvs/temperator/esp_hw_support/hw_random.c.o
+Compiling .pioenvs/temperator/esp_hw_support/intr_alloc.c.o
+Compiling .pioenvs/temperator/esp_hw_support/mac_addr.c.o
+Compiling .pioenvs/temperator/esp_hw_support/periph_ctrl.c.o
+Compiling .pioenvs/temperator/esp_hw_support/revision.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_http_client/libesp_http_client.a
+Archiving .pioenvs/temperator/esp-idf/esp_https_server/libesp_https_server.a
+Indexing .pioenvs/temperator/esp-idf/esp_http_client/libesp_http_client.a
+Indexing .pioenvs/temperator/esp-idf/esp_https_server/libesp_https_server.a
+Compiling .pioenvs/temperator/esp_hw_support/rtc_module.c.o
+Compiling .pioenvs/temperator/esp_hw_support/regi2c_ctrl.c.o
+Compiling .pioenvs/temperator/esp_hw_support/esp_gpio_reserve.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sar_periph_ctrl_common.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/io_mux.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_https_ota/libesp_https_ota.a
+Indexing .pioenvs/temperator/esp-idf/esp_https_ota/libesp_https_ota.a
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/esp_clk_tree.c.o
+Compiling .pioenvs/temperator/esp_hw_support/dma/esp_dma_utils.c.o
+Compiling .pioenvs/temperator/esp_hw_support/dma/gdma_link.c.o
+Compiling .pioenvs/temperator/esp_hw_support/spi_bus_lock.c.o
+Compiling .pioenvs/temperator/esp_hw_support/clk_utils.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp_clk_tree_common.c.o
+Compiling .pioenvs/temperator/esp_hw_support/spi_share_hw_ctrl.c.o
+Compiling .pioenvs/temperator/esp_hw_support/adc_share_hw_ctrl.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sleep_modem.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sleep_modes.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sleep_console.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sleep_usb.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sleep_gpio.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sleep_event.c.o
+Compiling .pioenvs/temperator/esp_hw_support/dma/gdma.c.o
+Compiling .pioenvs/temperator/esp_hw_support/deprecated/gdma_legacy.c.o
+Compiling .pioenvs/temperator/esp_hw_support/dma/esp_async_memcpy.c.o
+Compiling .pioenvs/temperator/esp_hw_support/dma/async_memcpy_gdma.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/systimer.c.o
+Compiling .pioenvs/temperator/esp_hw_support/mspi_timing_tuning/mspi_timing_tuning.c.o
+Compiling .pioenvs/temperator/esp_hw_support/sleep_wake_stub.c.o
+Compiling .pioenvs/temperator/esp_hw_support/esp_clock_output.c.o
+Compiling .pioenvs/temperator/esp_hw_support/power_supply/brownout.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/rtc_clk.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/rtc_clk_init.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/rtc_init.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/rtc_sleep.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/rtc_time.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/chip_info.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/sar_periph_ctrl.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp32s3/esp_memprot.c.o
+Compiling .pioenvs/temperator/esp_hw_support/port/esp_memprot_conv.c.o
+Compiling .pioenvs/temperator/esp_hw_support/mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.o
+Compiling .pioenvs/temperator/esp_hw_support/mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.o
+Compiling .pioenvs/temperator/esp_hw_support/lowpower/port/esp32s3/sleep_cpu.c.o
+Compiling .pioenvs/temperator/esp_lcd/src/esp_lcd_common.c.o
+Compiling .pioenvs/temperator/esp_lcd/src/esp_lcd_panel_io.c.o
+Compiling .pioenvs/temperator/esp_lcd/src/esp_lcd_panel_nt35510.c.o
+Compiling .pioenvs/temperator/esp_lcd/src/esp_lcd_panel_ssd1306.c.o
+Compiling .pioenvs/temperator/esp_lcd/src/esp_lcd_panel_st7789.c.o
+Compiling .pioenvs/temperator/esp_lcd/src/esp_lcd_panel_ops.c.o
+Compiling .pioenvs/temperator/esp_lcd/i2c/esp_lcd_panel_io_i2c_v1.c.o
+Compiling .pioenvs/temperator/esp_lcd/i2c/esp_lcd_panel_io_i2c_v2.c.o
+Compiling .pioenvs/temperator/esp_lcd/spi/esp_lcd_panel_io_spi.c.o
+Compiling .pioenvs/temperator/esp_lcd/i80/esp_lcd_panel_io_i80.c.o
+Compiling .pioenvs/temperator/esp_lcd/rgb/esp_lcd_panel_rgb.c.o
+Compiling .pioenvs/temperator/esp_local_ctrl/src/esp_local_ctrl.c.o
+Compiling .pioenvs/temperator/esp_local_ctrl/src/esp_local_ctrl_handler.c.o
+Compiling .pioenvs/temperator/esp_local_ctrl/proto-c/esp_local_ctrl.pb-c.c.o
+Compiling .pioenvs/temperator/esp_local_ctrl/src/esp_local_ctrl_transport_httpd.c.o
+Compiling .pioenvs/temperator/esp_mm/esp_mmu_map.c.o
+Compiling .pioenvs/temperator/esp_mm/port/esp32s3/ext_mem_layout.c.o
+Compiling .pioenvs/temperator/esp_mm/esp_cache_msync.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_hw_support/libesp_hw_support.a
+Compiling .pioenvs/temperator/esp_mm/esp_cache_utils.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_local_ctrl/libesp_local_ctrl.a
+Compiling .pioenvs/temperator/esp_mm/heap_align_hw.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_local_ctrl/libesp_local_ctrl.a
+Indexing .pioenvs/temperator/esp-idf/esp_hw_support/libesp_hw_support.a
+Compiling .pioenvs/temperator/esp_netif/esp_netif_handlers.c.o
+Compiling .pioenvs/temperator/esp_netif/esp_netif_objects.c.o
+Compiling .pioenvs/temperator/esp_netif/esp_netif_defaults.c.o
+Compiling .pioenvs/temperator/esp_netif/lwip/esp_netif_lwip.c.o
+Compiling .pioenvs/temperator/esp_netif/lwip/esp_netif_sntp.c.o
+Compiling .pioenvs/temperator/esp_netif/lwip/esp_netif_lwip_defaults.c.o
+Compiling .pioenvs/temperator/esp_netif/lwip/netif/wlanif.c.o
+Compiling .pioenvs/temperator/esp_netif/lwip/netif/ethernetif.c.o
+Compiling .pioenvs/temperator/esp_netif/lwip/netif/esp_pbuf_ref.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_mm/libesp_mm.a
+Indexing .pioenvs/temperator/esp-idf/esp_mm/libesp_mm.a
+Compiling .pioenvs/temperator/esp_partition/partition.c.o
+Compiling .pioenvs/temperator/esp_partition/partition_target.c.o
+Compiling .pioenvs/temperator/esp_phy/src/phy_override.c.o
+Compiling .pioenvs/temperator/esp_phy/src/lib_printf.c.o
+Compiling .pioenvs/temperator/esp_phy/src/phy_common.c.o
+Compiling .pioenvs/temperator/esp_phy/src/phy_init.c.o
+Compiling .pioenvs/temperator/esp_phy/esp32s3/phy_init_data.c.o
+Compiling .pioenvs/temperator/esp_phy/src/btbb_init.c.o
+Compiling .pioenvs/temperator/esp_pm/pm_locks.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_partition/libesp_partition.a
+Indexing .pioenvs/temperator/esp-idf/esp_partition/libesp_partition.a
+Compiling .pioenvs/temperator/esp_pm/pm_trace.c.o
+Compiling .pioenvs/temperator/esp_pm/pm_impl.c.o
+Compiling .pioenvs/temperator/esp_ringbuf/ringbuf.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_lcd/libesp_lcd.a
+Indexing .pioenvs/temperator/esp-idf/esp_lcd/libesp_lcd.a
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_sys.c.o
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_print.c.o
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_crc.c.o
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_uart.c.o
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_spiflash.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_phy/libesp_phy.a
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_efuse.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_phy/libesp_phy.a
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_gpio.c.o
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_longjmp.S.o
+Archiving .pioenvs/temperator/esp-idf/esp_pm/libesp_pm.a
+Archiving .pioenvs/temperator/esp-idf/esp_netif/libesp_netif.a
+Indexing .pioenvs/temperator/esp-idf/esp_pm/libesp_pm.a
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_systimer.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_netif/libesp_netif.a
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_wdt.c.o
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.o
+Compiling .pioenvs/temperator/esp_rom/patches/esp_rom_cache_writeback_esp32s3.S.o
+Compiling .pioenvs/temperator/esp_security/src/init.c.o
+Compiling .pioenvs/temperator/esp_security/src/esp_hmac.c.o
+Compiling .pioenvs/temperator/esp_security/src/esp_ds.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_rom/libesp_rom.a
+Compiling .pioenvs/temperator/esp_security/src/esp_crypto_lock.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_rom/libesp_rom.a
+Compiling .pioenvs/temperator/esp_security/src/esp_crypto_periph_clk.c.o
+Compiling .pioenvs/temperator/esp_system/esp_err.c.o
+Compiling .pioenvs/temperator/esp_system/crosscore_int.c.o
+Compiling .pioenvs/temperator/esp_system/esp_ipc.c.o
+Compiling .pioenvs/temperator/esp_system/esp_system_console.c.o
+Compiling .pioenvs/temperator/esp_system/freertos_hooks.c.o
+Compiling .pioenvs/temperator/esp_system/int_wdt.c.o
+Compiling .pioenvs/temperator/esp_system/panic.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_security/libesp_security.a
+Indexing .pioenvs/temperator/esp-idf/esp_security/libesp_security.a
+Compiling .pioenvs/temperator/esp_system/esp_system.c.o
+Compiling .pioenvs/temperator/esp_system/startup.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_ringbuf/libesp_ringbuf.a
+Indexing .pioenvs/temperator/esp-idf/esp_ringbuf/libesp_ringbuf.a
+Compiling .pioenvs/temperator/esp_system/startup_funcs.c.o
+Compiling .pioenvs/temperator/esp_system/system_time.c.o
+Compiling .pioenvs/temperator/esp_system/stack_check.c.o
+Compiling .pioenvs/temperator/esp_system/ubsan.c.o
+Compiling .pioenvs/temperator/esp_system/xt_wdt.c.o
+Compiling .pioenvs/temperator/esp_system/task_wdt/task_wdt.c.o
+Compiling .pioenvs/temperator/esp_system/task_wdt/task_wdt_impl_timergroup.c.o
+Compiling .pioenvs/temperator/esp_system/port/cpu_start.c.o
+Compiling .pioenvs/temperator/esp_system/port/panic_handler.c.o
+Compiling .pioenvs/temperator/esp_system/port/esp_system_chip.c.o
+Compiling .pioenvs/temperator/esp_system/port/image_process.c.o
+Compiling .pioenvs/temperator/esp_system/port/esp_ipc_isr.c.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/esp_ipc_isr_port.c.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/panic_arch.c.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/panic_handler_asm.S.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/expression_with_stack.c.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/expression_with_stack_asm.S.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/debug_helpers.c.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/debug_helpers_asm.S.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/debug_stubs.c.o
+Compiling .pioenvs/temperator/esp_system/port/arch/xtensa/trax.c.o
+Compiling .pioenvs/temperator/esp_system/port/soc/esp32s3/highint_hdl.S.o
+Compiling .pioenvs/temperator/esp_system/port/soc/esp32s3/clk.c.o
+Compiling .pioenvs/temperator/esp_system/port/soc/esp32s3/reset_reason.c.o
+Compiling .pioenvs/temperator/esp_system/port/soc/esp32s3/system_internal.c.o
+Compiling .pioenvs/temperator/esp_system/port/soc/esp32s3/cache_err_int.c.o
+Compiling .pioenvs/temperator/esp_system/port/soc/esp32s3/apb_backup_dma.c.o
+Compiling .pioenvs/temperator/esp_timer/src/esp_timer.c.o
+Compiling .pioenvs/temperator/esp_timer/src/esp_timer_init.c.o
+Compiling .pioenvs/temperator/esp_timer/src/ets_timer_legacy.c.o
+Compiling .pioenvs/temperator/esp_timer/src/system_time.c.o
+Compiling .pioenvs/temperator/esp_timer/src/esp_timer_impl_common.c.o
+Compiling .pioenvs/temperator/esp_timer/src/esp_timer_impl_systimer.c.o
+Compiling .pioenvs/temperator/esp_vfs_console/vfs_console.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_system/libesp_system.a
+Compiling .pioenvs/temperator/esp_wifi/src/lib_printf.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_system/libesp_system.a
+Compiling .pioenvs/temperator/esp_wifi/src/mesh_event.c.o
+Compiling .pioenvs/temperator/esp_wifi/src/smartconfig.c.o
+Compiling .pioenvs/temperator/esp_wifi/src/wifi_init.c.o
+Compiling .pioenvs/temperator/esp_wifi/src/wifi_default.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_vfs_console/libesp_vfs_console.a
+Compiling .pioenvs/temperator/esp_wifi/src/wifi_netif.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_vfs_console/libesp_vfs_console.a
+Archiving .pioenvs/temperator/esp-idf/esp_timer/libesp_timer.a
+Compiling .pioenvs/temperator/esp_wifi/src/wifi_default_ap.c.o
+Indexing .pioenvs/temperator/esp-idf/esp_timer/libesp_timer.a
+Compiling .pioenvs/temperator/esp_wifi/esp32s3/esp_adapter.c.o
+Compiling .pioenvs/temperator/esp_wifi/regulatory/esp_wifi_regulatory.c.o
+Compiling .pioenvs/temperator/esp_wifi/src/smartconfig_ack.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_init.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_common.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_flash.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_uart.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_elf.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_binary.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_sha.c.o
+Compiling .pioenvs/temperator/espcoredump/src/core_dump_crc.c.o
+Compiling .pioenvs/temperator/espcoredump/src/port/xtensa/core_dump_port.c.o
+Compiling .pioenvs/temperator/managed_components/espressif__mdns/mdns.c.o
+Compiling .pioenvs/temperator/managed_components/espressif__mdns/mdns_mem_caps.c.o
+Archiving .pioenvs/temperator/esp-idf/esp_wifi/libesp_wifi.a
+Archiving .pioenvs/temperator/esp-idf/espcoredump/libespcoredump.a
+Indexing .pioenvs/temperator/esp-idf/espcoredump/libespcoredump.a
+Indexing .pioenvs/temperator/esp-idf/esp_wifi/libesp_wifi.a
+Compiling .pioenvs/temperator/managed_components/espressif__mdns/mdns_networking_lwip.c.o
+Compiling .pioenvs/temperator/managed_components/espressif__mdns/mdns_console.c.o
+Compiling .pioenvs/temperator/fatfs/diskio/diskio.c.o
+Compiling .pioenvs/temperator/fatfs/diskio/diskio_rawflash.c.o
+Compiling .pioenvs/temperator/fatfs/diskio/diskio_wl.c.o
+Compiling .pioenvs/temperator/fatfs/src/ff.c.o
+Compiling .pioenvs/temperator/fatfs/src/ffunicode.c.o
+Compiling .pioenvs/temperator/fatfs/port/freertos/ffsystem.c.o
+Compiling .pioenvs/temperator/fatfs/diskio/diskio_sdmmc.c.o
+Compiling .pioenvs/temperator/fatfs/vfs/vfs_fat.c.o
+Compiling .pioenvs/temperator/fatfs/vfs/vfs_fat_sdmmc.c.o
+Compiling .pioenvs/temperator/fatfs/vfs/vfs_fat_spiflash.c.o
+Compiling .pioenvs/temperator/freertos/heap_idf.c.o
+Compiling .pioenvs/temperator/freertos/app_startup.c.o
+Compiling .pioenvs/temperator/freertos/port_common.c.o
+Compiling .pioenvs/temperator/freertos/port_systick.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/list.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/queue.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/tasks.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/timers.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/event_groups.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/stream_buffer.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/portable/xtensa/port.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c.o
+Compiling .pioenvs/temperator/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c.o
+Compiling .pioenvs/temperator/freertos/esp_additions/freertos_compatibility.c.o
+Compiling .pioenvs/temperator/freertos/esp_additions/idf_additions_event_groups.c.o
+Compiling .pioenvs/temperator/freertos/esp_additions/idf_additions.c.o
+Compiling .pioenvs/temperator/hal/hal_utils.c.o
+Compiling .pioenvs/temperator/hal/mpu_hal.c.o
+Compiling .pioenvs/temperator/hal/efuse_hal.c.o
+Compiling .pioenvs/temperator/hal/esp32s3/efuse_hal.c.o
+Compiling .pioenvs/temperator/hal/mmu_hal.c.o
+Compiling .pioenvs/temperator/hal/cache_hal.c.o
+Archiving .pioenvs/temperator/esp-idf/fatfs/libfatfs.a
+Compiling .pioenvs/temperator/hal/color_hal.c.o
+Indexing .pioenvs/temperator/esp-idf/fatfs/libfatfs.a
+Compiling .pioenvs/temperator/hal/spi_flash_hal.c.o
+Compiling .pioenvs/temperator/hal/spi_flash_hal_iram.c.o
+Compiling .pioenvs/temperator/hal/spi_flash_encrypt_hal_iram.c.o
+Compiling .pioenvs/temperator/hal/esp32s3/clk_tree_hal.c.o
+Compiling .pioenvs/temperator/hal/systimer_hal.c.o
+Compiling .pioenvs/temperator/hal/uart_hal.c.o
+Compiling .pioenvs/temperator/hal/uart_hal_iram.c.o
+Compiling .pioenvs/temperator/hal/gpio_hal.c.o
+Compiling .pioenvs/temperator/hal/rtc_io_hal.c.o
+Compiling .pioenvs/temperator/hal/timer_hal.c.o
+Compiling .pioenvs/temperator/hal/ledc_hal.c.o
+Compiling .pioenvs/temperator/hal/ledc_hal_iram.c.o
+Compiling .pioenvs/temperator/hal/i2c_hal.c.o
+Compiling .pioenvs/temperator/hal/i2c_hal_iram.c.o
+Compiling .pioenvs/temperator/hal/rmt_hal.c.o
+Compiling .pioenvs/temperator/hal/pcnt_hal.c.o
+Archiving .pioenvs/temperator/esp-idf/freertos/libfreertos.a
+Compiling .pioenvs/temperator/hal/mcpwm_hal.c.o
+Indexing .pioenvs/temperator/esp-idf/freertos/libfreertos.a
+Compiling .pioenvs/temperator/hal/uhci_hal.c.o
+Compiling .pioenvs/temperator/hal/twai_hal_sja1000.c.o
+Compiling .pioenvs/temperator/hal/gdma_hal_top.c.o
+Compiling .pioenvs/temperator/hal/gdma_hal_ahb_v1.c.o
+Compiling .pioenvs/temperator/hal/i2s_hal.c.o
+Compiling .pioenvs/temperator/hal/sdm_hal.c.o
+Compiling .pioenvs/temperator/hal/sdmmc_hal.c.o
+Compiling .pioenvs/temperator/hal/adc_hal_common.c.o
+Compiling .pioenvs/temperator/hal/adc_oneshot_hal.c.o
+Compiling .pioenvs/temperator/hal/adc_hal.c.o
+Compiling .pioenvs/temperator/hal/lcd_hal.c.o
+Compiling .pioenvs/temperator/hal/mpi_hal.c.o
+Compiling .pioenvs/temperator/hal/sha_hal.c.o
+Compiling .pioenvs/temperator/hal/aes_hal.c.o
+Compiling .pioenvs/temperator/hal/brownout_hal.c.o
+Compiling .pioenvs/temperator/hal/spi_hal.c.o
+Compiling .pioenvs/temperator/hal/spi_hal_iram.c.o
+Compiling .pioenvs/temperator/hal/spi_slave_hal.c.o
+Compiling .pioenvs/temperator/hal/spi_slave_hal_iram.c.o
+Compiling .pioenvs/temperator/hal/spi_slave_hd_hal.c.o
+Compiling .pioenvs/temperator/hal/spi_flash_hal_gpspi.c.o
+Compiling .pioenvs/temperator/hal/hmac_hal.c.o
+Compiling .pioenvs/temperator/hal/ds_hal.c.o
+Compiling .pioenvs/temperator/hal/cam_hal.c.o
+Compiling .pioenvs/temperator/hal/usb_serial_jtag_hal.c.o
+Compiling .pioenvs/temperator/hal/usb_dwc_hal.c.o
+Compiling .pioenvs/temperator/hal/usb_wrap_hal.c.o
+Compiling .pioenvs/temperator/hal/esp32s3/touch_sensor_hal.c.o
+Compiling .pioenvs/temperator/hal/touch_sensor_hal.c.o
+Compiling .pioenvs/temperator/hal/touch_sens_hal.c.o
+Compiling .pioenvs/temperator/hal/xt_wdt_hal.c.o
+Compiling .pioenvs/temperator/hal/esp32s3/rtc_cntl_hal.c.o
+Compiling .pioenvs/temperator/heap/heap_caps_base.c.o
+Compiling .pioenvs/temperator/heap/heap_caps.c.o
+Compiling .pioenvs/temperator/heap/heap_caps_init.c.o
+Compiling .pioenvs/temperator/heap/multi_heap.c.o
+Archiving .pioenvs/temperator/esp-idf/hal/libhal.a
+Compiling .pioenvs/temperator/heap/tlsf/tlsf.c.o
+Compiling .pioenvs/temperator/heap/port/memory_layout_utils.c.o
+Indexing .pioenvs/temperator/esp-idf/hal/libhal.a
+Compiling .pioenvs/temperator/heap/port/esp32s3/memory_layout.c.o
+Compiling .pioenvs/temperator/http_parser/http_parser.c.o
+Compiling .pioenvs/temperator/json/cJSON/cJSON.c.o
+Compiling .pioenvs/temperator/json/cJSON/cJSON_Utils.c.o
+Compiling .pioenvs/temperator/log/src/os/log_timestamp.c.o
+Compiling .pioenvs/temperator/log/src/log_timestamp_common.c.o
+Compiling .pioenvs/temperator/log/src/os/log_lock.c.o
+Compiling .pioenvs/temperator/log/src/buffer/log_buffers.c.o
+Compiling .pioenvs/temperator/log/src/os/util.c.o
+Compiling .pioenvs/temperator/log/src/util.c.o
+Compiling .pioenvs/temperator/log/src/log_format_text.c.o
+Compiling .pioenvs/temperator/log/src/log_print.c.o
+Compiling .pioenvs/temperator/log/src/log.c.o
+Compiling .pioenvs/temperator/log/src/os/log_write.c.o
+Compiling .pioenvs/temperator/log/src/log_level/log_level.c.o
+Compiling .pioenvs/temperator/log/src/log_level/tag_log_level/tag_log_level.c.o
+Compiling .pioenvs/temperator/log/src/log_level/tag_log_level/linked_list/log_linked_list.c.o
+Compiling .pioenvs/temperator/log/src/log_level/tag_log_level/cache/log_binary_heap.c.o
+Compiling .pioenvs/temperator/lwip/apps/sntp/sntp.c.o
+Archiving .pioenvs/temperator/esp-idf/espressif__mdns/libespressif__mdns.a
+Indexing .pioenvs/temperator/esp-idf/espressif__mdns/libespressif__mdns.a
+Compiling .pioenvs/temperator/lwip/lwip/src/api/api_lib.c.o
+Archiving .pioenvs/temperator/esp-idf/log/liblog.a
+Compiling .pioenvs/temperator/lwip/lwip/src/api/api_msg.c.o
+Indexing .pioenvs/temperator/esp-idf/log/liblog.a
+Compiling .pioenvs/temperator/lwip/lwip/src/api/err.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/api/if_api.c.o
+Archiving .pioenvs/temperator/esp-idf/heap/libheap.a
+Indexing .pioenvs/temperator/esp-idf/heap/libheap.a
+Compiling .pioenvs/temperator/lwip/lwip/src/api/netbuf.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/api/netdb.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/api/netifapi.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/api/sockets.c.o
+Archiving .pioenvs/temperator/esp-idf/json/libjson.a
+Indexing .pioenvs/temperator/esp-idf/json/libjson.a
+Compiling .pioenvs/temperator/lwip/lwip/src/api/tcpip.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/apps/sntp/sntp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/apps/netbiosns/netbiosns.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/def.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/dns.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/inet_chksum.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/init.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ip.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/mem.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/memp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/netif.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/pbuf.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/raw.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/stats.c.o
+Archiving .pioenvs/temperator/esp-idf/http_parser/libhttp_parser.a
+Indexing .pioenvs/temperator/esp-idf/http_parser/libhttp_parser.a
+Compiling .pioenvs/temperator/lwip/lwip/src/core/sys.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/tcp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/tcp_in.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/tcp_out.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/timeouts.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/udp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/autoip.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/dhcp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/etharp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/icmp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/igmp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/ip4.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/ip4_napt.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/ip4_addr.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv4/ip4_frag.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/dhcp6.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/ethip6.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/icmp6.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/inet6.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/ip6.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/ip6_addr.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/ip6_frag.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/mld6.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/core/ipv6/nd6.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ethernet.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/bridgeif.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/bridgeif_fdb.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/slipif.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/auth.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/ccp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/chap-md5.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/chap-new.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/chap_ms.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/demand.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/eap.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/ecp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/eui64.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/fsm.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/ipcp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/ipv6cp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/lcp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/magic.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/mppe.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/multilink.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/ppp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/pppapi.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/pppcrypt.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/pppoe.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/pppol2tp.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/pppos.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/upap.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/utils.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/vj.c.o
+Compiling .pioenvs/temperator/lwip/port/hooks/tcp_isn_default.c.o
+Compiling .pioenvs/temperator/lwip/port/hooks/lwip_default_hooks.c.o
+Compiling .pioenvs/temperator/lwip/port/debug/lwip_debug.c.o
+Compiling .pioenvs/temperator/lwip/port/sockets_ext.c.o
+Compiling .pioenvs/temperator/lwip/port/freertos/sys_arch.c.o
+Compiling .pioenvs/temperator/lwip/port/if_index.c.o
+Compiling .pioenvs/temperator/lwip/port/acd_dhcp_check.c.o
+Compiling .pioenvs/temperator/lwip/port/esp32xx/vfs_lwip.c.o
+Compiling .pioenvs/temperator/lwip/apps/ping/esp_ping.c.o
+Compiling .pioenvs/temperator/lwip/apps/ping/ping.c.o
+Compiling .pioenvs/temperator/lwip/apps/ping/ping_sock.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/polarssl/arc4.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/polarssl/des.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/polarssl/md4.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/polarssl/md5.c.o
+Compiling .pioenvs/temperator/lwip/lwip/src/netif/ppp/polarssl/sha1.c.o
+Compiling .pioenvs/temperator/mbedtls/esp_crt_bundle/esp_crt_bundle.c.o
+Compiling .pioenvs/temperator/.pioenvs/temperator/x509_crt_bundle.S.o
+Compiling .pioenvs/temperator/mqtt/esp-mqtt/mqtt_client.c.o
+Compiling .pioenvs/temperator/mqtt/esp-mqtt/lib/mqtt_msg.c.o
+Archiving .pioenvs/temperator/esp-idf/lwip/liblwip.a
+Compiling .pioenvs/temperator/mqtt/esp-mqtt/lib/mqtt_outbox.c.o
+Compiling .pioenvs/temperator/mqtt/esp-mqtt/lib/platform_esp32_idf.c.o
+Indexing .pioenvs/temperator/esp-idf/lwip/liblwip.a
+Compiling .pioenvs/temperator/newlib/src/init.c.o
+Compiling .pioenvs/temperator/newlib/src/abort.c.o
+Archiving .pioenvs/temperator/esp-idf/mbedtls/libmbedtls.a
+Compiling .pioenvs/temperator/newlib/src/assert.c.o
+Indexing .pioenvs/temperator/esp-idf/mbedtls/libmbedtls.a
+Compiling .pioenvs/temperator/newlib/src/heap.c.o
+Compiling .pioenvs/temperator/newlib/src/locks.c.o
+Compiling .pioenvs/temperator/newlib/src/poll.c.o
+Compiling .pioenvs/temperator/newlib/src/pthread.c.o
+Compiling .pioenvs/temperator/newlib/src/random.c.o
+Compiling .pioenvs/temperator/newlib/src/getentropy.c.o
+Compiling .pioenvs/temperator/newlib/src/termios.c.o
+Compiling .pioenvs/temperator/newlib/src/stdatomic.c.o
+Compiling .pioenvs/temperator/newlib/src/time.c.o
+Compiling .pioenvs/temperator/newlib/src/sysconf.c.o
+Compiling .pioenvs/temperator/newlib/src/realpath.c.o
+Compiling .pioenvs/temperator/newlib/src/scandir.c.o
+Compiling .pioenvs/temperator/newlib/src/syscalls.c.o
+Compiling .pioenvs/temperator/newlib/src/reent_syscalls.c.o
+Compiling .pioenvs/temperator/newlib/src/port/esp_time_impl.c.o
+Compiling .pioenvs/temperator/newlib/src/flockfile.c.o
+Compiling .pioenvs/temperator/newlib/src/reent_init.c.o
+Compiling .pioenvs/temperator/newlib/src/newlib_init.c.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_api.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_cxx_api.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_item_hash_list.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_page.cpp.o
+Archiving .pioenvs/temperator/esp-idf/newlib/libnewlib.a
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_pagemanager.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_storage.cpp.o
+Indexing .pioenvs/temperator/esp-idf/newlib/libnewlib.a
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_handle_simple.cpp.o
+Archiving .pioenvs/temperator/esp-idf/mqtt/libmqtt.a
+Indexing .pioenvs/temperator/esp-idf/mqtt/libmqtt.a
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_handle_locked.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_partition.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_partition_lookup.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_partition_manager.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_types.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_platform.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_bootloader.c.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_encrypted_partition.cpp.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_bootloader_aes.c.o
+Compiling .pioenvs/temperator/nvs_flash/src/nvs_bootloader_xts_aes.c.o
+Compiling .pioenvs/temperator/nvs_sec_provider/nvs_sec_provider.c.o
+Compiling .pioenvs/temperator/perfmon/xtensa_perfmon_access.c.o
+Compiling .pioenvs/temperator/perfmon/xtensa_perfmon_apis.c.o
+Compiling .pioenvs/temperator/perfmon/xtensa_perfmon_masks.c.o
+Compiling .pioenvs/temperator/protobuf-c/protobuf-c/protobuf-c/protobuf-c.c.o
+Compiling .pioenvs/temperator/protocomm/src/common/protocomm.c.o
+Archiving .pioenvs/temperator/esp-idf/nvs_sec_provider/libnvs_sec_provider.a
+Archiving .pioenvs/temperator/esp-idf/perfmon/libperfmon.a
+Indexing .pioenvs/temperator/esp-idf/nvs_sec_provider/libnvs_sec_provider.a
+Compiling .pioenvs/temperator/protocomm/proto-c/constants.pb-c.c.o
+Indexing .pioenvs/temperator/esp-idf/perfmon/libperfmon.a
+Compiling .pioenvs/temperator/protocomm/proto-c/sec0.pb-c.c.o
+Compiling .pioenvs/temperator/protocomm/proto-c/sec1.pb-c.c.o
+Compiling .pioenvs/temperator/protocomm/proto-c/sec2.pb-c.c.o
+Compiling .pioenvs/temperator/protocomm/proto-c/session.pb-c.c.o
+Compiling .pioenvs/temperator/protocomm/src/transports/protocomm_console.c.o
+Compiling .pioenvs/temperator/protocomm/src/transports/protocomm_httpd.c.o
+Compiling .pioenvs/temperator/protocomm/src/security/security0.c.o
+Compiling .pioenvs/temperator/protocomm/src/security/security1.c.o
+Compiling .pioenvs/temperator/protocomm/src/security/security2.c.o
+Compiling .pioenvs/temperator/protocomm/src/crypto/srp6a/esp_srp.c.o
+Compiling .pioenvs/temperator/protocomm/src/crypto/srp6a/esp_srp_mpi.c.o
+Compiling .pioenvs/temperator/pthread/pthread.c.o
+Compiling .pioenvs/temperator/pthread/pthread_cond_var.c.o
+Compiling .pioenvs/temperator/pthread/pthread_local_storage.c.o
+Compiling .pioenvs/temperator/pthread/pthread_rwlock.c.o
+Compiling .pioenvs/temperator/pthread/pthread_semaphore.c.o
+Compiling .pioenvs/temperator/rt/FreeRTOS_POSIX_mqueue.c.o
+Archiving .pioenvs/temperator/esp-idf/protocomm/libprotocomm.a
+Compiling .pioenvs/temperator/rt/FreeRTOS_POSIX_utils.c.o
+Indexing .pioenvs/temperator/esp-idf/protocomm/libprotocomm.a
+Compiling .pioenvs/temperator/sdmmc/sdmmc_cmd.c.o
+Archiving .pioenvs/temperator/esp-idf/nvs_flash/libnvs_flash.a
+Compiling .pioenvs/temperator/sdmmc/sdmmc_common.c.o
+Compiling .pioenvs/temperator/sdmmc/sdmmc_init.c.o
+Archiving .pioenvs/temperator/esp-idf/pthread/libpthread.a
+Indexing .pioenvs/temperator/esp-idf/nvs_flash/libnvs_flash.a
+Indexing .pioenvs/temperator/esp-idf/pthread/libpthread.a
+Compiling .pioenvs/temperator/sdmmc/sdmmc_io.c.o
+Compiling .pioenvs/temperator/sdmmc/sdmmc_mmc.c.o
+Compiling .pioenvs/temperator/sdmmc/sdmmc_sd.c.o
+Archiving .pioenvs/temperator/esp-idf/rt/librt.a
+Indexing .pioenvs/temperator/esp-idf/rt/librt.a
+Compiling .pioenvs/temperator/sdmmc/sd_pwr_ctrl/sd_pwr_ctrl.c.o
+Compiling .pioenvs/temperator/soc/lldesc.c.o
+Compiling .pioenvs/temperator/soc/dport_access_common.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/interrupts.c.o
+Archiving .pioenvs/temperator/esp-idf/protobuf-c/libprotobuf-c.a
+Compiling .pioenvs/temperator/soc/esp32s3/gpio_periph.c.o
+Indexing .pioenvs/temperator/esp-idf/protobuf-c/libprotobuf-c.a
+Compiling .pioenvs/temperator/soc/esp32s3/uart_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/adc_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/dedic_gpio_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/gdma_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/spi_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/ledc_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/pcnt_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/rmt_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/sdm_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/i2s_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/i2c_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/temperature_sensor_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/timer_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/lcd_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/mcpwm_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/mpi_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/sdmmc_periph.c.o
+Archiving .pioenvs/temperator/esp-idf/sdmmc/libsdmmc.a
+Compiling .pioenvs/temperator/soc/esp32s3/touch_sensor_periph.c.o
+Indexing .pioenvs/temperator/esp-idf/sdmmc/libsdmmc.a
+Compiling .pioenvs/temperator/soc/esp32s3/twai_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/wdt_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/usb_dwc_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/rtc_io_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/cam_periph.c.o
+Compiling .pioenvs/temperator/soc/esp32s3/power_supply_periph.c.o
+Compiling .pioenvs/temperator/spi_flash/flash_brownout_hook.c.o
+Compiling .pioenvs/temperator/spi_flash/esp32s3/spi_flash_oct_flash_init.c.o
+Archiving .pioenvs/temperator/esp-idf/soc/libsoc.a
+Compiling .pioenvs/temperator/spi_flash/spi_flash_hpm_enable.c.o
+Indexing .pioenvs/temperator/esp-idf/soc/libsoc.a
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_drivers.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_generic.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_issi.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_mxic.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_gd.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_winbond.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_boya.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_mxic_opi.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_chip_th.c.o
+Compiling .pioenvs/temperator/spi_flash/memspi_host_driver.c.o
+Compiling .pioenvs/temperator/spi_flash/cache_utils.c.o
+Compiling .pioenvs/temperator/spi_flash/flash_mmap.c.o
+Compiling .pioenvs/temperator/spi_flash/flash_ops.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_wrap.c.o
+Compiling .pioenvs/temperator/spi_flash/esp_flash_api.c.o
+Compiling .pioenvs/temperator/spi_flash/esp_flash_spi_init.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_os_func_app.c.o
+Compiling .pioenvs/temperator/spi_flash/spi_flash_os_func_noos.c.o
+Compiling .pioenvs/temperator/spiffs/spiffs_api.c.o
+Compiling .pioenvs/temperator/spiffs/spiffs/src/spiffs_cache.c.o
+Compiling .pioenvs/temperator/spiffs/spiffs/src/spiffs_check.c.o
+Compiling .pioenvs/temperator/spiffs/spiffs/src/spiffs_gc.c.o
+Compiling .pioenvs/temperator/spiffs/spiffs/src/spiffs_hydrogen.c.o
+Compiling .pioenvs/temperator/spiffs/spiffs/src/spiffs_nucleus.c.o
+Compiling .pioenvs/temperator/spiffs/esp_spiffs.c.o
+Compiling .pioenvs/temperator/tcp_transport/transport.c.o
+Compiling .pioenvs/temperator/tcp_transport/transport_ssl.c.o
+Archiving .pioenvs/temperator/esp-idf/spi_flash/libspi_flash.a
+Indexing .pioenvs/temperator/esp-idf/spi_flash/libspi_flash.a
+Compiling .pioenvs/temperator/tcp_transport/transport_internal.c.o
+Compiling .pioenvs/temperator/tcp_transport/transport_socks_proxy.c.o
+Compiling .pioenvs/temperator/tcp_transport/transport_ws.c.o
+Compiling .pioenvs/temperator/touch_element/touch_element.c.o
+Compiling .pioenvs/temperator/touch_element/touch_button.c.o
+Compiling .pioenvs/temperator/touch_element/touch_slider.c.o
+Compiling .pioenvs/temperator/touch_element/touch_matrix.c.o
+Compiling .pioenvs/temperator/unity/unity/src/unity.c.o
+Compiling .pioenvs/temperator/unity/unity_compat.c.o
+Compiling .pioenvs/temperator/unity/unity_runner.c.o
+Compiling .pioenvs/temperator/unity/unity_utils_freertos.c.o
+Compiling .pioenvs/temperator/unity/unity_utils_cache.c.o
+Compiling .pioenvs/temperator/unity/unity_utils_memory.c.o
+Compiling .pioenvs/temperator/unity/unity_port_esp32.c.o
+Compiling .pioenvs/temperator/unity/port/esp/unity_utils_memory_esp.c.o
+Archiving .pioenvs/temperator/esp-idf/tcp_transport/libtcp_transport.a
+Indexing .pioenvs/temperator/esp-idf/tcp_transport/libtcp_transport.a
+Compiling .pioenvs/temperator/usb/hcd_dwc.c.o
+Archiving .pioenvs/temperator/esp-idf/touch_element/libtouch_element.a
+Archiving .pioenvs/temperator/esp-idf/spiffs/libspiffs.a
+Indexing .pioenvs/temperator/esp-idf/touch_element/libtouch_element.a
+Compiling .pioenvs/temperator/usb/enum.c.o
+Indexing .pioenvs/temperator/esp-idf/spiffs/libspiffs.a
+Compiling .pioenvs/temperator/usb/hub.c.o
+Compiling .pioenvs/temperator/usb/usb_helpers.c.o
+Compiling .pioenvs/temperator/usb/usb_host.c.o
+Compiling .pioenvs/temperator/usb/usb_private.c.o
+Compiling .pioenvs/temperator/usb/usbh.c.o
+Compiling .pioenvs/temperator/usb/usb_phy.c.o
+Archiving .pioenvs/temperator/esp-idf/unity/libunity.a
+Indexing .pioenvs/temperator/esp-idf/unity/libunity.a
+Compiling .pioenvs/temperator/vfs/vfs.c.o
+Compiling .pioenvs/temperator/vfs/vfs_eventfd.c.o
+Compiling .pioenvs/temperator/vfs/vfs_semihost.c.o
+Compiling .pioenvs/temperator/vfs/nullfs.c.o
+Compiling .pioenvs/temperator/wear_levelling/Partition.cpp.o
+Compiling .pioenvs/temperator/wear_levelling/SPI_Flash.cpp.o
+Compiling .pioenvs/temperator/wear_levelling/WL_Ext_Perf.cpp.o
+Compiling .pioenvs/temperator/wear_levelling/WL_Ext_Safe.cpp.o
+Compiling .pioenvs/temperator/wear_levelling/WL_Flash.cpp.o
+Compiling .pioenvs/temperator/wear_levelling/crc32.cpp.o
+Compiling .pioenvs/temperator/wear_levelling/wear_levelling.cpp.o
+Compiling .pioenvs/temperator/wifi_provisioning/src/wifi_config.c.o
+Archiving .pioenvs/temperator/esp-idf/vfs/libvfs.a
+Indexing .pioenvs/temperator/esp-idf/vfs/libvfs.a
+Compiling .pioenvs/temperator/wifi_provisioning/src/wifi_scan.c.o
+Compiling .pioenvs/temperator/wifi_provisioning/src/wifi_ctrl.c.o
+Compiling .pioenvs/temperator/wifi_provisioning/src/manager.c.o
+Compiling .pioenvs/temperator/wifi_provisioning/src/handlers.c.o
+Compiling .pioenvs/temperator/wifi_provisioning/src/scheme_console.c.o
+Compiling .pioenvs/temperator/wifi_provisioning/proto-c/wifi_config.pb-c.c.o
+Archiving .pioenvs/temperator/esp-idf/usb/libusb.a
+Indexing .pioenvs/temperator/esp-idf/usb/libusb.a
+Compiling .pioenvs/temperator/wifi_provisioning/proto-c/wifi_scan.pb-c.c.o
+Compiling .pioenvs/temperator/wifi_provisioning/proto-c/wifi_ctrl.pb-c.c.o
+Compiling .pioenvs/temperator/wifi_provisioning/proto-c/wifi_constants.pb-c.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/port/os_xtensa.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/port/eloop.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/ap_config.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/ieee802_1x.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/wpa_auth.c.o
+Archiving .pioenvs/temperator/esp-idf/wear_levelling/libwear_levelling.a
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/wpa_auth_ie.c.o
+Indexing .pioenvs/temperator/esp-idf/wear_levelling/libwear_levelling.a
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/pmksa_cache_auth.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/sta_info.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/ieee802_11.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/ap/comeback_token.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/common/sae.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/common/dragonfly.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/common/wpa_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/bitfield.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/aes-siv.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha256-kdf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/ccmp.c.o
+Archiving .pioenvs/temperator/esp-idf/wifi_provisioning/libwifi_provisioning.a
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/aes-gcm.c.o
+Indexing .pioenvs/temperator/esp-idf/wifi_provisioning/libwifi_provisioning.a
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/crypto_ops.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/dh_group5.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/dh_groups.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/ms_funcs.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha1-tlsprf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha256-tlsprf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha384-tlsprf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha256-prf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha1-prf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha384-prf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/md4-internal.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/sha1-tprf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_common/eap_wsc_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/common/ieee802_11_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/chap.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_mschapv2.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_peap.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_peap_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_tls.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_tls_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_ttls.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/mschapv2.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_fast.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_fast_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/eap_peer/eap_fast_pac.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/rsn_supp/pmksa_cache.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/rsn_supp/wpa.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/rsn_supp/wpa_ie.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/base64.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/ext_password.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/uuid.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/wpabuf.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/wpa_debug.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/utils/json.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/wps/wps.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/wps/wps_attr_build.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/wps/wps_attr_parse.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/wps/wps_attr_process.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/wps/wps_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/wps/wps_dev_attr.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/wps/wps_enrollee.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/common/sae_pk.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_eap_client.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_wps.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_wpa3.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/esp_owe.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/asn1.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/bignum.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/pkcs1.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/pkcs5.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/pkcs8.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/rsa.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/tls_internal.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/tlsv1_client.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/tlsv1_client_read.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/tlsv1_client_write.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/tlsv1_common.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/tlsv1_cred.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/tlsv1_record.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/tlsv1_client_ocsp.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/tls/x509v3.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/crypto/fastpsk.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/rc4.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/des-internal.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/aes-wrap.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/aes-unwrap.c.o
+Compiling .pioenvs/temperator/wpa_supplicant/src/crypto/aes-ccm.c.o
+Compiling .pioenvs/temperator/xtensa/eri.c.o
+Compiling .pioenvs/temperator/xtensa/xt_trax.c.o
+Compiling .pioenvs/temperator/xtensa/xtensa_context.S.o
+Compiling .pioenvs/temperator/xtensa/xtensa_intr_asm.S.o
+Compiling .pioenvs/temperator/xtensa/xtensa_intr.c.o
+Compiling .pioenvs/temperator/xtensa/xtensa_vectors.S.o
+Compiling .pioenvs/temperator/managed_components/zorxx__multipart-parser/multipart_parser.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/3rdparty/everest/library/everest.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/3rdparty/everest/library/x25519.c.o
+Archiving .pioenvs/temperator/esp-idf/wpa_supplicant/libwpa_supplicant.a
+Compiling .pioenvs/temperator/mbedtls/mbedtls/3rdparty/everest/library/Hacl_Curve25519_joined.c.o
+Archiving .pioenvs/temperator/esp-idf/xtensa/libxtensa.a
+Indexing .pioenvs/temperator/esp-idf/xtensa/libxtensa.a
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/aes.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/aesni.c.o
+Indexing .pioenvs/temperator/esp-idf/wpa_supplicant/libwpa_supplicant.a
+Archiving .pioenvs/temperator/esp-idf/zorxx__multipart-parser/libzorxx__multipart-parser.a
+Archiving .pioenvs/temperator/esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
+Indexing .pioenvs/temperator/esp-idf/zorxx__multipart-parser/libzorxx__multipart-parser.a
+Indexing .pioenvs/temperator/esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/aesce.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/aria.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/asn1parse.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/asn1write.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/base64.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/bignum.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/bignum_core.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/bignum_mod.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/bignum_mod_raw.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/block_cipher.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/camellia.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ccm.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/chacha20.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/chachapoly.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/cipher.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/cipher_wrap.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/constant_time.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/cmac.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ctr_drbg.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/des.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/dhm.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ecdh.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ecdsa.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ecjpake.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ecp.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ecp_curves.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ecp_curves_new.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/entropy.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/entropy_poll.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/error.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/gcm.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/hkdf.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/hmac_drbg.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/lmots.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/lms.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/md.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/md5.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/memory_buffer_alloc.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/nist_kw.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/oid.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/padlock.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pem.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pk.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pk_ecc.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pk_wrap.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pkcs12.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pkcs5.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pkparse.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pkwrite.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/platform.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/platform_util.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/poly1305.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_aead.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_cipher.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_client.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_ecp.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_ffdh.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_hash.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_mac.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_pake.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_rsa.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_se.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_slot_management.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_crypto_storage.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_its_file.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/psa_util.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ripemd160.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/rsa.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/rsa_alt_helpers.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/sha1.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/sha256.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/sha512.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/sha3.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/threading.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/timing.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/version.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/version_features.c.o
+Compiling .pioenvs/temperator/mbedtls/port/sha/core/esp_sha_gdma_impl.c.o
+Compiling .pioenvs/temperator/mbedtls/port/aes/dma/esp_aes_gdma_impl.c.o
+Compiling .pioenvs/temperator/mbedtls/port/aes/dma/esp_aes_dma_core.c.o
+Compiling .pioenvs/temperator/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.o
+Compiling .pioenvs/temperator/mbedtls/port/esp_hardware.c.o
+Compiling .pioenvs/temperator/mbedtls/port/esp_mem.c.o
+Compiling .pioenvs/temperator/mbedtls/port/esp_timing.c.o
+Compiling .pioenvs/temperator/mbedtls/port/aes/esp_aes_xts.c.o
+Compiling .pioenvs/temperator/mbedtls/port/aes/esp_aes_common.c.o
+Compiling .pioenvs/temperator/mbedtls/port/aes/dma/esp_aes.c.o
+Compiling .pioenvs/temperator/mbedtls/port/sha/esp_sha.c.o
+Compiling .pioenvs/temperator/mbedtls/port/sha/core/sha.c.o
+Compiling .pioenvs/temperator/mbedtls/port/esp_ds/esp_rsa_sign_alt.c.o
+Compiling .pioenvs/temperator/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.o
+Compiling .pioenvs/temperator/mbedtls/port/esp_ds/esp_ds_common.c.o
+Compiling .pioenvs/temperator/mbedtls/port/bignum/esp_bignum.c.o
+Compiling .pioenvs/temperator/mbedtls/port/bignum/bignum_alt.c.o
+Compiling .pioenvs/temperator/mbedtls/port/sha/core/esp_sha1.c.o
+Compiling .pioenvs/temperator/mbedtls/port/sha/core/esp_sha256.c.o
+Compiling .pioenvs/temperator/mbedtls/port/sha/core/esp_sha512.c.o
+Compiling .pioenvs/temperator/mbedtls/port/aes/esp_aes_gcm.c.o
+Compiling .pioenvs/temperator/mbedtls/port/md/esp_md.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/debug.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/mps_reader.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/mps_trace.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_cache.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_ciphersuites.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_client.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_cookie.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_msg.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_ticket.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_tls.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_tls12_client.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_tls12_server.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_tls13_keys.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_tls13_server.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_tls13_client.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/ssl_tls13_generic.c.o
+Compiling .pioenvs/temperator/mbedtls/port/mbedtls_debug.c.o
+Compiling .pioenvs/temperator/mbedtls/port/esp_platform_time.c.o
+Compiling .pioenvs/temperator/mbedtls/port/net_sockets.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/pkcs7.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509_create.c.o
+Archiving .pioenvs/temperator/esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509_crl.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509_crt.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509_csr.c.o
+Indexing .pioenvs/temperator/esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509write.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509write_crt.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/library/x509write_csr.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c.o
+Compiling .pioenvs/temperator/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c.o
+Compiling .pioenvs/temperator/bootloader/xtensa/eri.c.o
+Compiling .pioenvs/temperator/bootloader/xtensa/xt_trax.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader/subproject/main/bootloader_start.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_common.c.o
+Archiving .pioenvs/temperator/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
+Archiving .pioenvs/temperator/bootloader/esp-idf/xtensa/libxtensa.a
+Indexing .pioenvs/temperator/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_common_loader.c.o
+Indexing .pioenvs/temperator/bootloader/esp-idf/xtensa/libxtensa.a
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_clock_init.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/main/libmain.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/main/libmain.a
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_mem.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_random.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_efuse.c.o
+Archiving .pioenvs/temperator/esp-idf/mbedtls/mbedtls/library/libmbedtls.a
+Indexing .pioenvs/temperator/esp-idf/mbedtls/mbedtls/library/libmbedtls.a
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/flash_encrypt.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/secure_boot.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_random_esp32s3.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/bootloader_flash/src/bootloader_flash.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/bootloader_flash/src/flash_qio_mode.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_utility.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/flash_partitions.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/esp_image_format.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_sha.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_init.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_clock_loader.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_console.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_console_loader.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/esp32s3/bootloader_soc.c.o
+Archiving .pioenvs/temperator/esp-idf/mbedtls/mbedtls/library/libmbedx509.a
+Indexing .pioenvs/temperator/esp-idf/mbedtls/mbedtls/library/libmbedx509.a
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/esp32s3/bootloader_esp32s3.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader_support/src/bootloader_panic.c.o
+Generating project linker script .pioenvs/temperator/sections.ld
+Compiling .pioenvs/temperator/bootloader/efuse/esp32s3/esp_efuse_table.c.o
+Compiling .pioenvs/temperator/bootloader/efuse/esp32s3/esp_efuse_fields.c.o
+Compiling .pioenvs/temperator/bootloader/efuse/esp32s3/esp_efuse_rtc_calib.c.o
+Compiling .pioenvs/temperator/bootloader/efuse/esp32s3/esp_efuse_utility.c.o
+Compiling .pioenvs/temperator/bootloader/efuse/src/esp_efuse_api.c.o
+Compiling .pioenvs/temperator/bootloader/efuse/src/esp_efuse_fields.c.o
+Compiling .pioenvs/temperator/bootloader/efuse/src/esp_efuse_utility.c.o
+Compiling .pioenvs/temperator/bootloader/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/bootloader_support/libbootloader_support.a
+Compiling .pioenvs/temperator/bootloader/esp_bootloader_format/esp_bootloader_desc.c.o
+Indexing .pioenvs/temperator/bootloader/esp-idf/bootloader_support/libbootloader_support.a
+Compiling .pioenvs/temperator/bootloader/esp_common/src/esp_err_to_name.c.o
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/cpu.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/esp_cpu_intr.c.o
+Indexing .pioenvs/temperator/bootloader/esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/esp_memory_utils.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/esp_common/libesp_common.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/esp_common/libesp_common.a
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/cpu_region_protect.c.o
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/rtc_clk.c.o
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/rtc_clk_init.c.o
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/rtc_init.c.o
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/rtc_sleep.c.o
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/rtc_time.c.o
+Compiling .pioenvs/temperator/bootloader/esp_hw_support/port/esp32s3/chip_info.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/efuse/libefuse.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/efuse/libefuse.a
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_sys.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_print.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_crc.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_uart.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_spiflash.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_efuse.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_gpio.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_longjmp.S.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_systimer.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_wdt.c.o
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a
+Compiling .pioenvs/temperator/bootloader/esp_rom/patches/esp_rom_cache_writeback_esp32s3.S.o
+Indexing .pioenvs/temperator/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a
+Compiling .pioenvs/temperator/bootloader/esp_system/esp_err.c.o
+Compiling .pioenvs/temperator/bootloader/hal/hal_utils.c.o
+Compiling .pioenvs/temperator/bootloader/hal/mpu_hal.c.o
+Compiling .pioenvs/temperator/bootloader/hal/efuse_hal.c.o
+Compiling .pioenvs/temperator/bootloader/hal/esp32s3/efuse_hal.c.o
+Compiling .pioenvs/temperator/bootloader/hal/mmu_hal.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/esp_rom/libesp_rom.a
+Archiving .pioenvs/temperator/bootloader/esp-idf/esp_system/libesp_system.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/esp_rom/libesp_rom.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/esp_system/libesp_system.a
+Compiling .pioenvs/temperator/bootloader/hal/cache_hal.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/noos/log_timestamp.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/log_timestamp_common.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/noos/log_lock.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/buffer/log_buffers.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/noos/util.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/util.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/log_format_text.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/log_print.c.o
+Compiling .pioenvs/temperator/bootloader/log/src/log.c.o
+Compiling .pioenvs/temperator/bootloader/bootloader/subproject/components/micro-ecc/uECC_verify_antifault.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/hal/libhal.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/hal/libhal.a
+Compiling .pioenvs/temperator/bootloader/soc/lldesc.c.o
+Compiling .pioenvs/temperator/bootloader/soc/dport_access_common.c.o
+Archiving .pioenvs/temperator/bootloader/esp-idf/log/liblog.a
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/interrupts.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/gpio_periph.c.o
+Indexing .pioenvs/temperator/bootloader/esp-idf/log/liblog.a
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/uart_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/adc_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/dedic_gpio_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/gdma_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/spi_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/ledc_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/pcnt_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/rmt_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/sdm_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/i2s_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/i2c_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/temperature_sensor_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/timer_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/lcd_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/mcpwm_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/mpi_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/sdmmc_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/touch_sensor_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/twai_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/wdt_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/usb_dwc_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/rtc_io_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/cam_periph.c.o
+Compiling .pioenvs/temperator/bootloader/soc/esp32s3/power_supply_periph.c.o
+Compiling .pioenvs/temperator/bootloader/spi_flash/spi_flash_wrap.c.o
+Generating partitions .pioenvs/temperator/partitions.bin
+Generating an empty partition .pioenvs/temperator/ota_data_initial.bin
+Archiving .pioenvs/temperator/bootloader/esp-idf/soc/libsoc.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/soc/libsoc.a
+Archiving .pioenvs/temperator/bootloader/esp-idf/spi_flash/libspi_flash.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/spi_flash/libspi_flash.a
+Archiving .pioenvs/temperator/bootloader/esp-idf/micro-ecc/libmicro-ecc.a
+Indexing .pioenvs/temperator/bootloader/esp-idf/micro-ecc/libmicro-ecc.a
+Linking .pioenvs/temperator/bootloader.elf
+Building .pioenvs/temperator/bootloader.bin
+Creating ESP32S3 image...
+Successfully created ESP32S3 image.
+Linking .pioenvs/temperator/firmware.elf
+                            Memory Type Usage Summary
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Memory Type/Section ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ Flash Code          │       603468 │          │                │               │
+│    .text            │       603468 │          │                │               │
+│ Flash Data          │       126208 │          │                │               │
+│    .rodata          │       125952 │          │                │               │
+│    .appdesc         │          256 │          │                │               │
+│ DIRAM               │       109355 │     32.0 │         232405 │        341760 │
+│    .text            │        73239 │    21.43 │                │               │
+│    .data            │        18556 │     5.43 │                │               │
+│    .bss             │        17560 │     5.14 │                │               │
+│ IRAM                │        16384 │    100.0 │              0 │         16384 │
+│    .text            │        15356 │    93.73 │                │               │
+│    .vectors         │         1028 │     6.27 │                │               │
+└─────────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
+Total image size: 837855 bytes (.bin may be padded larger)
+Note: The reported total sizes may be smaller than those in the technical reference manual due to reserved memory and application configuration. The total flash size available for the application is not included by default, as it cannot be reliably determined due to the presence of other data like the bootloader, partition table, and application partition size.
+RAM:   [=         ]  11.0% (used 36116 bytes from 327680 bytes)
+Flash: [=         ]  10.3% (used 837599 bytes from 8126464 bytes)
+Building .pioenvs/temperator/firmware.bin
+Creating ESP32S3 image...
+Successfully created ESP32S3 image.
+merge_factory_bin([".pioenvs/temperator/firmware.bin"], [".pioenvs/temperator/firmware.elf"])
+Info: bootloader.bin not found - skipping
+Info: partition-table.bin not found - skipping
+Info: ota_data_initial.bin not found - skipping
+Info: temperator.bin not found - skipping
+Using FLASH_EXTRA_IMAGES from PlatformIO environment
+Info: nora_recovery.ino.bin not found — skipping
+Merging binaries into /home/khit6/Workspace/homeautomation/esphome-projects/temperator/src/.esphome/build/temperator/.pioenvs/temperator/firmware.factory.bin
+Merging binaries with esptool
+SHA digest in image updated.
+Wrote 0xdc970 bytes to file '/home/khit6/Workspace/homeautomation/esphome-projects/temperator/src/.esphome/build/temperator/.pioenvs/temperator/firmware.factory.bin', ready to flash to offset 0x0.
+Successfully created /home/khit6/Workspace/homeautomation/esphome-projects/temperator/src/.esphome/build/temperator/.pioenvs/temperator/firmware.factory.bin
+esp32_copy_ota_bin([".pioenvs/temperator/firmware.bin"], [".pioenvs/temperator/firmware.elf"])
+Copied firmware to /home/khit6/Workspace/homeautomation/esphome-projects/temperator/src/.esphome/build/temperator/.pioenvs/temperator/firmware.ota.bin
+=============================================================================================================== [SUCCESS] Took 201.14 seconds ===============================================================================================================
+INFO Package configuration completed successfully
+INFO Package configuration completed successfully
+INFO Successfully compiled program.

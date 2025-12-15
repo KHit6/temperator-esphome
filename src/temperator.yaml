@@ -1,0 +1,311 @@
+esphome:
+  name: temperator
+  friendly_name: "temperator"
+  comment: "Author: KHit6 (khit6@gmx.net)"
+  platformio_options:
+    board_build.flash_mode: dio
+  project:
+    name: "KHit6.temperator"
+    version: "1.1.0"
+
+# esphome in some versions does not support "arduino nano esp32".
+# To circumvent this I defined the resources with a common ESP32S3 with additional flash and defined the build-in LEDs as substitutions.
+# if your esphome build environment supports arduino_nano_esp32 remove the substitions and the $-signs
+substitutions:
+  LED_BUILTIN: GPIO48
+  NP_RED:      GPIO46
+  NP_GREEN:    GPIO0
+  NP_BLUE:     GPIO45
+  SDA:         GPIO11
+  SCL:         GPIO12
+#  arduino_nano_esp32: esp32-s3-devkitc-1 # uncomment if arduino_nano_esp32 isn't supported natively
+
+esp32:
+  board: arduino_nano_esp32 # replace with $arduino_nano_esp32 if arduino_nano_esp32 isn't supported natively
+  variant: esp32s3
+  flash_size: 16MB
+  framework:
+    type: esp-idf 
+    version: recommended 
+
+# Enable logging
+logger:
+  level: DEBUG  # use INFO in production
+  logs:
+    # Reduce verbosity for components that might log sensitive data
+    wifi: WARN
+    api:  WARN
+
+wifi:
+  networks:
+    - ssid:     !secret wifi_ssid-1
+      password: !secret wifi_password-1
+    - ssid:     !secret wifi_ssid-2
+      password: !secret wifi_password-2
+
+# fallback access point, mandatory if captive_portal is enabled
+  ap:
+    ssid: "temperator-fallback"
+    password: !secret fallback_password
+
+# legacy API to homeasssistant or iobroker
+api:
+#  encryption:
+#    key: !secret temperator_api_key
+
+# over the air updates
+ota:
+  - platform: esphome
+    password: !secret temperator_ota_password
+
+# settings for MQTT, if used
+#mqtt:
+#  broker:   !secret temperator_mqtt_broker
+#  username: !secret temperator_mqtt_username
+#  password: !secret temperator_mqtt_password
+
+#web_server:
+#  port: 80
+#  auth:
+#    username: !secret temperator_web_username
+#    password: !secret temperator_web_password
+
+# wifi:ap: must be enabled too
+captive_portal:
+
+# LEDs und andere outputs
+output:
+  - platform: gpio
+    pin: $NP_RED
+    id: led_red
+    inverted: true
+  - platform: gpio
+    pin: $NP_GREEN
+    id: led_green
+    inverted: true
+  - platform: gpio
+    pin: $NP_BLUE
+    id: led_blue
+    inverted: true
+  - platform: gpio
+    id: SHUTDOWN
+    pin: GPIO38
+
+# will be used with version 2 of temperator t shutdown sensor supply
+binary_sensor:
+  - platform: gpio
+    id: ErrorFlag
+    pin: 
+      number: GPIO47
+      inverted: true
+      mode:
+        input: true
+        pullup: true   
+    
+status_led:
+  pin:
+    number: $LED_BUILTIN
+
+# set sensor gain to both analog inputs = A/V
+number:
+  - platform: template
+    name: CT_GAIN_1   # A/V
+    id: CT_FACTOR_1
+    entity_category: config
+    optimistic: true
+    restore_value: true
+    initial_value: 15
+    min_value: 0
+    max_value: 100
+    step: 1
+  - platform: template
+    name: CT_GAIN_2   # A/V
+    id: CT_FACTOR_2
+    entity_category: config
+    optimistic: true
+    restore_value: true
+    initial_value: 15
+    min_value: 0
+    max_value: 100
+    step: 1
+    
+one_wire:
+  - platform: gpio
+    pin: GPIO5
+    id: sensor_temp_1    
+  - platform: gpio
+    pin: GPIO6
+    id: sensor_temp_2
+  - platform: gpio
+    pin: GPIO7
+    id: sensor_temp_3
+  - platform: gpio
+    pin: GPIO8
+    id: sensor_temp_4
+  - platform: gpio
+    pin: GPIO9
+    id: sensor_temp_5
+  - platform: gpio
+    pin: GPIO10
+    id: sensor_temp_6
+  - platform: gpio
+    pin: GPIO17
+    id: sensor_temp_7
+  - platform: gpio
+    pin: GPIO18
+    id: sensor_temp_8
+  
+sensor:
+  - platform: dallas_temp
+    name: T1
+    one_wire_id: sensor_temp_1
+    id: temp01
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+  - platform: dallas_temp
+    name: T2
+    one_wire_id: sensor_temp_2
+    id: temp02
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+  - platform: dallas_temp
+    name: T3
+    one_wire_id: sensor_temp_3
+    id: temp03
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+  - platform: dallas_temp
+    name: T4
+    one_wire_id: sensor_temp_4
+    id: temp04
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+  - platform: dallas_temp
+    name: T5
+    one_wire_id: sensor_temp_5
+    id: temp05
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+  - platform: dallas_temp
+    name: T6
+    one_wire_id: sensor_temp_6
+    id: temp06
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+  - platform: dallas_temp
+    name: T7
+    one_wire_id: sensor_temp_7
+    id: temp07
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+  - platform: dallas_temp
+    name: T8
+    one_wire_id: sensor_temp_8
+    id: temp08
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    accuracy_decimals: 1
+    
+  - platform: adc
+    pin: GPIO2
+    name: ADC1
+    id: adc01
+    internal: true
+    update_interval: 1s
+    accuracy_decimals: 3
+    device_class: "voltage"
+    unit_of_measurement: "V"
+    state_class: "measurement"
+    filters:
+      - lambda: return (x - id(adc03).state);
+  - platform: adc
+    pin: GPIO1
+    name: ADC2
+    id: adc02
+    internal: true
+    update_interval: 1s
+    accuracy_decimals: 3
+    device_class: "voltage"
+    unit_of_measurement: "V"
+    state_class: "measurement"
+    filters:
+      - lambda: return (x - id(adc03).state);
+  - platform: adc
+    pin: GPIO3
+    name: ADC3
+    id: adc03
+    internal: true
+    update_interval: 1s
+    accuracy_decimals: 3
+    device_class: "voltage"
+    unit_of_measurement: "V"
+    state_class: "measurement"
+    
+  - platform: ct_clamp
+    sensor: adc01
+    name: A1
+    id: ct1
+    sample_duration: 500ms
+    update_interval: 1s
+    unit_of_measurement: "A"
+    state_class: "measurement"
+    filters:
+      - lambda: return (x * id(CT_FACTOR_1).state * 0.51);
+      - round: 2
+  - platform: ct_clamp
+    sensor: adc02
+    name: A2
+    id: ct2
+    sample_duration: 500ms
+    update_interval: 1s
+    unit_of_measurement: "A"
+    state_class: "measurement"
+    filters:
+      - lambda: return (x * id(CT_FACTOR_2).state * 0.51);
+      - round: 2
+    
+font:
+  - file: "fonts/DejaVuSansMono.ttf"
+    id: dejavusans
+    size: 10
+
+i2c:
+    sda: $SDA
+    scl: $SCL
+    frequency: 400kHz
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 128x64"
+    address: 0x3C
+    lambda: |-
+        int _leftpos  = 2;
+        int _rightpos = 66;
+        int _ypos     = 2;
+        int _yoffset  = 12;
+        it.printf(_leftpos,  _ypos,             id(dejavusans), TextAlign::TOP_LEFT, id(temp01).has_state() ? "T1: %.1f°C" : "T1: ---", id(temp01).state);
+        it.printf(_rightpos, _ypos,             id(dejavusans), TextAlign::TOP_LEFT, id(temp05).has_state() ? "T5: %.1f°C" : "T5: ---", id(temp05).state);
+        it.printf(_leftpos,  _ypos += _yoffset, id(dejavusans), TextAlign::TOP_LEFT, id(temp02).has_state() ? "T2: %.1f°C" : "T2: ---", id(temp02).state);
+        it.printf(_rightpos, _ypos,             id(dejavusans), TextAlign::TOP_LEFT, id(temp06).has_state() ? "T6: %.1f°C" : "T6: ---", id(temp06).state);
+        it.printf(_leftpos,  _ypos += _yoffset, id(dejavusans), TextAlign::TOP_LEFT, id(temp03).has_state() ? "T3: %.1f°C" : "T3: ---", id(temp03).state);
+        it.printf(_rightpos, _ypos,             id(dejavusans), TextAlign::TOP_LEFT, id(temp07).has_state() ? "T7: %.1f°C" : "T7: ---", id(temp07).state);
+        it.printf(_leftpos,  _ypos += _yoffset, id(dejavusans), TextAlign::TOP_LEFT, id(temp04).has_state() ? "T4: %.1f°C" : "T4: ---", id(temp04).state);
+        it.printf(_rightpos, _ypos,             id(dejavusans), TextAlign::TOP_LEFT, id(temp08).has_state() ? "T8: %.1f°C" : "T8: ---", id(temp08).state);
+        it.printf(_leftpos,  _ypos += _yoffset, id(dejavusans), TextAlign::TOP_LEFT,                          "A1: %.2fA",              id(ct1).state);
+        it.printf(_rightpos, _ypos,             id(dejavusans), TextAlign::TOP_LEFT,                          "A2: %.2fA",              id(ct2).state);
+
