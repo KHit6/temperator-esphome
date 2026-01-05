@@ -11,19 +11,19 @@ To accomplish this I installed the ESPHome toolchain as command line tools. Ther
 
 ## Features
   * The configuration targets an [Arduino Nano ESP32](https://docs.arduino.cc/hardware/nano-esp32/) or compatible devices
-  * It supports the acquisition of 8 individual connected DS18B20 temperature sensors and 2 AC currents through current transformers (CTs)
+  * It supports the acquisition of 8 individual connected DS18B20 temperature sensors and 2 AC currents through current transformers (CTs), e.g. split core current transformers
   * An on board I2C connected display shows actual measurement values
   * The (calculated) gain settings for the AC currents can be controlled from the connected host software, e.g. Home Assistant
   * Internal calibration removes the DC offset with analogue inputs automatically
   * As default the legacy Home Assistant connection protocol is used, but MQTT can be enabled as well
-  * An on board LEDS clears when WiFi connection is established 
+  * An on board LED clears when connection to a server is established 
 
 ## Preparation
 It makes little difference whether you use the following instructions with Linux or Windows. There are some minor differences, but these are due to the operating system environment and not due to ESPHome.
 
 I assume you are using a shell; PowerShell with Windows or Bash with Linux.
 
- 1. A current version of Git, Python, and [pipenv](https://pipenv.pypa.io/en/latest/) must be installed. Using pipenv is just one of many options, but it's very helpful. Although Python isn't used for any coding it is very helpful to install and manage the tool chain.
+ 1. A current version of Git, Python, and [pipenv](https://pipenv.pypa.io/en/latest/) must be installed. Using pipenv is just one of many options, but it's very helpful. Although Python isn't used for any coding it is very helpful to install and manage the toolchain.
  1. Open your shell.
  1. Test if the paths work: "python --version" and "pipenv --version". Adjust the path settings if necessary.
  1. Clone from this repository and  change into the created working directory
@@ -33,7 +33,7 @@ I assume you are using a shell; PowerShell with Windows or Bash with Linux.
 ## Usage
   1. Open your shell
   2. Navigate to the project folder, e.g., "cd temperator-esphome"
-  3. Enter the virtual Python environment, "pipenv shell".
+  3. Enter the virtual Python environment's shell, "pipenv shell".
   4. Copy src/secrets-template.yaml to src/secrets.yaml
   4. Only the first times until compilation is successful do
   5. * Compile the project, "esphome compile src/temperator.yaml". The first time it will take a while. This step provides most of surprises :-) .
@@ -45,14 +45,14 @@ I assume you are using a shell; PowerShell with Windows or Bash with Linux.
   10. The module's red or orange LED ([status_led](https://esphome.io/components/status_led/)) will flash until an API or MQTT connection to the server is established. It clears when a connection is established.
   11. Congratulations, the module is now transmitting its information. Please inspect the display if the shown measurement values are reasonable. 
 
-## some impressions
+## Some impressions
 ![temperator in case with display](docs/temperator-in-case.png)
 
 ![Screenshot of Home Assistant device settings](docs/screenshot-home-assistant-2.png)
 
 ## Some hints
-### Build listing
-An example first time build listing is documented [here](docs/build-listing.txt).
+### Build log
+An example first time build log is documented [here](docs/build-log.txt).
 
 ### Different ways to your data
 If you uncomment the "mqtt" section in src/temperator.yaml file, then MQTT messages are being sent. If the "api" section is not commented out, then the module is also sending to a local Home Assistant instance. If the "web-server:" section isn't uncommented, then the module is also making its information available via a simple web server. In every case please consider appropriate value within secrets.yaml.
